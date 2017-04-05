@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_payment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MyDetailsItem"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment_accountName"
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/list_Payment_one"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment_statusStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_Payment_two"
+                android:textSize="@dimen/textSize_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment_type"
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/list_Payment_three"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment_paymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textSize_14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/MyView_16" />
+
+    <LinearLayout
+        style="@style/MyFirstItem"
+        android:gravity="end">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_Payment_four"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_payment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Payment_five"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

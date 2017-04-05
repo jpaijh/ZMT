@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyFirstItem"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_drawer_stateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态"
+        android:textColor="@color/black_one_mark_87"
+        android:textSize="@dimen/textSize_16sp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_drawer_state"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"/>
+
+
+</LinearLayout>

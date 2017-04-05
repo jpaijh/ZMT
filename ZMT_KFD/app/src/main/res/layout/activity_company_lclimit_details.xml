@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="30dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_orServer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    />
+
+            </LinearLayout>
+
+            <!--附件-->
+            <LinearLayout
+                android:id="@+id/ll_attachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:visibility="gone">
+                <!--android:id="@+id/tv_orServer_attachName"-->
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/TvAttachment"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/material_loading_progressbar" />
+
+    <include layout="@layout/tv_no_data" />
+
+
+</RelativeLayout>

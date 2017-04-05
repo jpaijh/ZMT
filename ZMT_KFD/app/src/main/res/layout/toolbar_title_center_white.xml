@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/color_theme"
+    android:gravity="center"
+    android:minHeight="@dimen/toolbar_height"
+    app:layout_collapseMode="pin"
+    app:navigationIcon="@mipmap/ic_back1"
+    app:theme="@style/ToolbarTheme"
+    app:titleTextColor="@color/white">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_17sp"
+        android:textStyle="normal" />
+
+</android.support.v7.widget.Toolbar>
+

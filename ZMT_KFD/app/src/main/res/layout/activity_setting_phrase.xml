@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_theme_bj"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_title_center_white"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_Phrase_one"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="10dp"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line_color" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/phrase_recycler_ok"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_phrase_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_phrase_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_add_plus"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/color_theme"
+                        android:text="@string/setting_Phrase_two"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/setting_Phrase_three"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/appCompatTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_Phrase_four"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="10dp"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line_color" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/phrase_recycler_Unok"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_phrase_Unok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_phrase_Unok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_add_plus"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/color_theme"
+                        android:text="@string/setting_Phrase_five"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/setting_Phrase_six"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

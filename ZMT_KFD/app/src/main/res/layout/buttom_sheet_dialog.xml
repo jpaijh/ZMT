@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyCardView"
+    android:layout_gravity="bottom|center"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="10dp"
+            android:text="选择服务器"
+            android:textColor="?attr/colorAccent" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/server_one_dialog"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="自贸通审批"
+            android:textSize="@dimen/textSize_16sp"
+            android:textColor="@color/black_two_mark_54" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/server_two_dialog"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_16sp"
+            android:text="全顺审批"
+            android:textColor="@color/black_two_mark_54" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/server_three_dialog"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_16sp"
+            android:text="本地测试"
+            android:textColor="@color/black_two_mark_54" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/server_cancel_dialog"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="?attr/colorAccent" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

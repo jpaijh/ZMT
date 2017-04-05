@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/MyView" />
+
+        <LinearLayout
+
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_mine_item_background"
+            android:clickable="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:gravity="center_vertical"
+                android:text="@string/setting_About_one"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_versionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:text="@string/setting_About_two"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_14sp" />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:background="@drawable/selector_mine_item_background"
+            android:clickable="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:gravity="center_vertical"
+                android:text="@string/setting_About_three"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp" />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_mine_item_background"
+            android:clickable="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:gravity="center_vertical"
+                android:text="@string/setting_About_four"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp" />
+
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_mine_item_background"
+            android:clickable="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:gravity="center_vertical"
+                android:text="@string/setting_About_five"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp" />
+
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_mine_item_background"
+            android:clickable="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:gravity="center_vertical"
+                android:text="@string/setting_About_six"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp" />
+
+        </LinearLayout>
+        <View style="@style/MyView_16" />
+        <LinearLayout
+            android:id="@+id/ll_check_update"
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_mine_item_background"
+            android:clickable="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:gravity="center_vertical"
+                android:text="@string/setting_About_seven"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp" />
+
+        </LinearLayout>
+
+        <View style="@style/MyView" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyFirstItem"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_drawer_amountName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订单金额"
+        android:textColor="@color/black_one_mark_87"
+        android:textSize="@dimen/textSize_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_drawer_amountFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_drawer_ed"
+            android:digits="0123456789."
+            android:gravity="center"
+            android:textSize="@dimen/textSize_14sp"
+            android:hint="最低金额"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" —— " />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_drawer_amountTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize_14sp"
+            android:background="@drawable/shape_drawer_ed"
+            android:digits="0123456789."
+            android:gravity="center"
+            android:hint="最高金额"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

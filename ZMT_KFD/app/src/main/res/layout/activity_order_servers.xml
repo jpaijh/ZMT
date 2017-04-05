@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+            <!--android:focusable="true"-->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_orServer_name"
+                style="@style/MyFirstItem"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <View style="@style/MyView_16" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_orServer_actions"
+                style="@style/MyFirstItem"
+                android:background="@drawable/selector_mine_item_background"
+                android:drawablePadding="6dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:textColor="@color/details_Approval"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_orServer"
+                    style="@style/MyRecyclerView"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+            <!--和并前后的商品-->
+            <RelativeLayout
+                android:id="@+id/rl_orServer_after"
+                style="@style/MyFirstItem"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_mine_item_background"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orServer_afterName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="请选择收款单位"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orServer_afterSubName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_14sp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_arrow_next" />
+            </RelativeLayout>
+
+
+            <!--附件-->
+            <LinearLayout
+                android:id="@+id/ll_attachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <!--android:id="@+id/tv_orServer_attachName"-->
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/TvAttachment"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_attachment"
+                    style="@style/MyRecyclerView"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

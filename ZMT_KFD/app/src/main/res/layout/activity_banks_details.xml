@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <include layout="@layout/toolbar_title_center_white"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Company_bank_one"
+        android:textSize="@dimen/textSize_17sp"
+        android:id="@+id/appCompatTextView5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="8">
+
+            <android.support.v7.widget.AppCompatTextView
+               style="@style/AppcompatTextView_NormalSize_DefaultColor_Weight2"
+                android:gravity="center_vertical"
+                android:text="@string/Company_bank_two"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_banksList_accountName"
+                style="@style/AppcompatTextView_NormalSize_DarkColor_Weight3"
+                android:text="杭州全顺" />
+
+        </LinearLayout>
+        <View style="@style/MyView_16" />
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="8">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_NormalSize_DefaultColor_Weight2"
+                android:gravity="center_vertical"
+                android:text="@string/Company_bank_three"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_banksList_companyName"
+                style="@style/AppcompatTextView_NormalSize_DarkColor_Weight3"
+                android:text="民生银行"
+                />
+
+        </LinearLayout>
+        <View style="@style/MyView_16" />
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="8">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_NormalSize_DefaultColor_Weight2"
+                android:gravity="center_vertical"
+                android:text="@string/Company_bank_four"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_banksList_statusStr"
+                style="@style/AppcompatTextView_NormalSize_DarkColor_Weight3"
+                android:text="32434"
+                />
+
+        </LinearLayout>
+        <View style="@style/MyView_16" />
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="8">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_NormalSize_DefaultColor_Weight2"
+                android:gravity="center_vertical"
+                android:text="@string/Company_bank_five"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_banksList_bankName"
+                style="@style/AppcompatTextView_NormalSize_DarkColor_Weight3"
+                android:text="32434"
+                />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="8">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_NormalSize_DefaultColor_Weight2"
+                android:gravity="center_vertical"
+                android:text="@string/Company_bank_six"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_banksList_bankAccount"
+                style="@style/AppcompatTextView_NormalSize_DarkColor_Weight3"
+                android:text="32434"
+                />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="8">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_NormalSize_DefaultColor_Weight2"
+                android:gravity="center_vertical"
+                android:text="@string/Company_bank_seven"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_banksList_swiftCode"
+                style="@style/AppcompatTextView_NormalSize_DarkColor_Weight3"
+                android:text="32434"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

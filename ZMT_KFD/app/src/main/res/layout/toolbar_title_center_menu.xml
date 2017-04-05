@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/color_theme"
+    android:gravity="center"
+    android:minHeight="@dimen/toolbar_height"
+    app:layout_collapseMode="pin"
+    app:navigationIcon="@mipmap/ic_back1"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    app:popupTheme="@style/ToolbarTheme"
+    app:titleTextColor="@color/white">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_17sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/textSize_14sp"
+        android:textStyle="normal" />
+
+</android.support.v7.widget.Toolbar>
+
+

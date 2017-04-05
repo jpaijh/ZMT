@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MyFirstItem"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_buyerCode_Name"
+                style="@style/AppcompatTextView_Weight1"
+                android:text="发的第三方第三方第三方第三方地方"
+                android:ellipsize="marquee"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_buyerCode_buyerCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_code_two"
+                android:textSize="@dimen/textSize_14sp" />
+            <!--#FF55AE7C  android:textIsSelectable="true" 可以复制-->
+        </LinearLayout>
+
+        <View android:id="@+id/view"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            style="@style/MyView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_buyerCode_country"
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_buyerCode_companyId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/company_code_three"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+        </LinearLayout>
+
+        <!--下面3个LinearLayout之在中信保的银行申请中有用-->
+        <LinearLayout
+            android:id="@+id/ll_company_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/company_bank_two"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_buyerCode_bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_company_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/company_bank_three"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_buyerCode_bankAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_company_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/company_bank_four"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_buyerCode_swiftCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/MyView_16"/>
+
+    <LinearLayout
+        style="@style/MyFirstItem"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_insure_payTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/textSize_14sp"
+            android:text="@string/company_code_four"
+            android:textColor="@color/black_two_mark_54"
+            android:visibility="gone"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_buyerCode_uploadedTime"
+            style="@style/AppcompatTextView_Weight1"
+            android:gravity="end"
+            android:textSize="@dimen/textSize_14sp"
+            android:text="@string/company_code_four"
+            android:textColor="@color/black_two_mark_54"
+            />
+    </LinearLayout>
+
+</LinearLayout>

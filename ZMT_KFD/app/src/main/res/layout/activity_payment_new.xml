@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white_noicon" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <!--提款客户的资金信息-->
+            <LinearLayout
+                android:id="@+id/ll_pyNew_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    style="@style/MyFirstItem"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/ll_pyNew_accountName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="霸州市众诚玻璃制品有限公司"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+                </LinearLayout>
+
+                <View style="@style/MyView_16" />
+
+                <LinearLayout
+                    style="@style/MyFirstItem"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_nameOne"
+                            style="@style/AppcompatTextView_Weight1"
+                            android:ellipsize="marquee"
+                            android:text="客户编码"
+                            android:textColor="@color/black_two_mark_54"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_valueOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="980.00"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                    </LinearLayout>
+
+                    <!--总资金余额-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_nameTwo"
+                            style="@style/AppcompatTextView_Weight1"
+                            android:ellipsize="marquee"
+                            android:text="总资金余额"
+                            android:textColor="@color/black_two_mark_54"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_valueTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="69.00"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_nameThree"
+                            style="@style/AppcompatTextView_Weight1"
+                            android:ellipsize="marquee"
+                            android:text="融资款账户"
+                            android:textColor="@color/black_two_mark_54"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_valueThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="57,794.87"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_nameFour"
+                            style="@style/AppcompatTextView_Weight1"
+                            android:ellipsize="marquee"
+                            android:text="待支付预估费用"
+                            android:textColor="@color/black_two_mark_54"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/ll_pyNew_valueFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9,825.13"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--第一页-->
+                <LinearLayout
+                    android:id="@+id/ll_pyNew_pageOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="16dp"
+                        android:text="@string/Payment_new_one"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_14sp" />
+
+                    <!--客户类型-->
+                    <RelativeLayout
+                        android:id="@+id/rl_pyNew_customer"
+                        style="@style/MyFirstItem"
+                        android:background="@drawable/selector_mine_item_background"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/image_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/ic_pynew_customer" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/image_right"
+                            android:layout_toRightOf="@+id/image_left"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/ll_pyNew_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="请选择客户"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/ll_pyNew_statusStr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/image_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/ic_arrow_next" />
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="16dp"
+                        android:text="@string/Payment_new_two"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                        <!--付款方式-->
+                        <LinearLayout
+                            android:id="@+id/ll_pyNew_Method"
+                            style="@style/MyFirstItem"
+                            android:background="@drawable/selector_mine_item_background"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="@string/Payment_new_three"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_pyNew_Method"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@mipmap/ic_arrow_next"
+                                android:gravity="end"
+                                android:singleLine="true"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_16sp" />
+                        </LinearLayout>
+
+                        <View style="@style/MyView_16" />
+                        <!--货款-->
+                        <LinearLayout
+                            style="@style/MyFirstItem"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_pyNew_Type"
+                                style="@style/AppcompatTextView_Weight1"
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@mipmap/ic_arrow_next"
+                                android:gravity="center_vertical"
+                                android:text="贷款"
+                                android:textColor="@color/blue_600"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/black_three_mark_38" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_pyNew_subType"
+                                style="@style/AppcompatTextView_Weight2"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@mipmap/ic_arrow_next"
+                                android:gravity="end"
+                                android:singleLine="true"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_16sp" />
+                        </LinearLayout>
+
+                        <View style="@style/MyView_16" />
+
+                        <!--担保方式-->
+                        <LinearLayout
+                            android:id="@+id/ll_pyNew_guarantee"
+                            style="@style/MyFirstItem"
+                            android:background="@drawable/selector_mine_item_background"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="@string/Payment_new_four"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_pyNew_guarantee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@mipmap/ic_arrow_next"
+                                android:gravity="end"
+                                android:singleLine="true"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--资金来源-->
+                    <LinearLayout
+                        style="@style/MyFirstItem_5"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/white"
+                        android:descendantFocusability="blocksDescendants"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/AppcompatTextView_Weight1"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/Payment_new_five"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                        <com.example.ZMTCSD.view.AndroidSegmentedControlView
+                            android:id="@+id/androidSegmentedControlView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            app:ascv_selectedColor="@color/test_attr_selected_color"
+                            app:ascv_selectedTextColor="@color/test_attr_selected_text_color"
+                            app:ascv_stretch="false"
+                            app:ascv_unselectedColor="@color/test_attr_unselected_color"
+                            app:ascv_unselectedTextColor="@color/test_attr_unselected_text_color" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/Payment_new_six"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_14sp" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_pyNew_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/select_btn_next"
+                        android:enabled="false"
+                        android:text="@string/Payment_new_seven"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_18sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/material_loading_progressbar" />
+
+    <include layout="@layout/tv_volley_date" />
+
+
+</RelativeLayout>

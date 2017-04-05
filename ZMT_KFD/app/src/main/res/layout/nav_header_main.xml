@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/main_nav_background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.thinkcool.circletextimageview.CircleTextImageView
+        android:layout_height="95dp"
+        android:layout_width="95dp"
+        android:src="@mipmap/ic_user_circle"
+        android:layout_centerInParent="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav_circleimgview"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/nav_user_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/textSize_18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="本地测试"
+        android:layout_below="@+id/nav_circleimgview"/>
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+        <!--android:id="@+id/nav_user_server"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="@dimen/textSize_14sp"-->
+        <!--android:textColor="@color/white_two_mark"-->
+        <!--android:text="本地测试"-->
+        <!--android:layout_below="@+id/nav_user_name"/>-->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/nav_user_status"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/textSize_12sp"
+        android:text="本地测试"
+        android:textColor="@color/white_two_mark"
+        android:layout_below="@+id/nav_user_name"/>
+
+</RelativeLayout>

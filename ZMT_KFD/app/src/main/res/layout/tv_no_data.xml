@@ -1,0 +1,17 @@
+<android.support.v7.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_no_data"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:drawableTop="@mipmap/ic_empty_box3"
+    android:drawablePadding="20dp"
+    android:gravity="center"
+    android:maxLines="1"
+    android:singleLine="true"
+    android:text="暂无数据"
+    android:textSize="@dimen/textSize_18sp"
+    android:visibility="gone" />
+

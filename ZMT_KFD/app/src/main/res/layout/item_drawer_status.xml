@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_status_name"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:text="@string/sendDate"
+    android:gravity="center"
+    android:textSize="@dimen/textSize_14sp"
+    android:textColor="@color/black_two_mark_54"
+    android:background="@drawable/shape_drawer_ed"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:singleLine="true"
+    />

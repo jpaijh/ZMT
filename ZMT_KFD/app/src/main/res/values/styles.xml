@@ -1,0 +1,305 @@
+<resources>
+
+    <!--1.colorPrimary: Toolbar导航栏的底色。-->
+    <!--2.colorPrimaryDark：状态栏的底色，注意这里只支持Android5.0以上的手机。-->
+    <!--3.textColorPrimary：整个当前Activity的字体的默认颜色。-->
+    <!--4.android:windowBackground：当前Activity的窗体颜色。-->
+    <!--5.colorAccent：CheckBox，RadioButton，SwitchCompat等控件的点击选中颜色-->
+    <!--6.colorControlNormal：CheckBox，RadioButton，SwitchCompat等默认状态的颜色。-->
+    <!--7.colorButtonNormal：默认状态下Button按钮的颜色。-->
+    <!--8.editTextColor：默认EditView输入框字体的颜色。-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Theme:NoActionBar，带导航栏-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+
+    <!-- Theme:Fullscreen 全屏显示，不带导航栏-->
+    <style name="AppTheme.NoActionBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!-- Theme:Loading界面单独使用的主题-->
+    <style name="AppTheme.NoActionBar.Fullscreen.Loading">
+        <!-- 为了让第一个启动的界面 Loading 界面开启应用时不显示空白页，特地给Loading界面单独使用的,显示的是Loading图片-->
+        <!-- 所以如果Loading界面的图片修改了，这里也要改-->
+        <item name="android:windowBackground">@mipmap/ic_loading</item>
+    </style>
+
+
+    <style name="MyProgressDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--ProgressBar颜色,系统默认是系统的颜色-->
+        <item name="colorAccent">@color/color_theme</item>
+        <!-- 字体的颜色，系统默认灰色-->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+    </style>
+    <!-- toolbar菜单文字尺寸 -->
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">@dimen/textSize_13sp</item>
+    </style>
+
+    <!-- 登录界面：editText-->
+    <style name="editText">
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <!-- 各管理界面RecyclerView中的item:CardView -->
+    <style name="MyCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="Approval_list_AppcompatTextView_Weight1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textSize_12sp</item>
+        <item name="android:textColor">@color/IApprove_list_bottom_textView</item>
+    </style>
+    <!--<style name="Approval_list_AppcompatTextView_Weight2">-->
+        <!--<item name="android:layout_width">0dp</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_weight">2</item>-->
+        <!--<item name="android:textSize">@dimen/textSize_12sp</item>-->
+        <!--<item name="android:textColor">@color/IApprove_list_bottom_textView</item>-->
+    <!--</style>-->
+
+    <style name="Approval_list_AppcompatTextView_Weight3">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">@dimen/textSize_12sp</item>
+        <item name="android:textColor">@color/IApprove_list_bottom_textView</item>
+    </style>
+
+<!-- 这是审批详情中的text的大小-->
+    <style name="AppcompatTextView_NormalSize_DefaultColor_Weight2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">@color/black_two_mark_54</item>
+        <item name="android:textSize">@dimen/textSize_17sp</item>
+    </style>
+        <!--<item name="android:textIsSelectable">true</item>-->
+
+    <style name="AppcompatTextView_NormalSize_DarkColor_Weight3">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textColor">@color/black_one_mark_87</item>
+        <item name="android:textSize">@dimen/textSize_17sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--电话弹出框的样式-->
+    <style name="photo_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <!--分段选择器 -->
+    <style name="MyAndroidSegmentedControlView" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <!--置为真,如果你想要每个段宽度相等-->
+        <!--<item name="ascv_equalWidth">true</item>-->
+        <!--为true如果视图应该延伸至填满它的父视-->
+        <item name="ascv_stretch">true</item>
+        <!--开始选择的为0-->
+        <!--<item name="ascv_defaultSelection">0</item>-->
+        <!--选中的背景的颜色-->
+        <item name="ascv_selectedColor">@color/test_attr_selected_color</item>
+        <!--选中的text的颜色-->
+        <item name="ascv_selectedTextColor">@color/test_attr_selected_text_color</item>
+        <!--未选中的背景的颜色-->
+        <item name="ascv_unselectedColor">@color/test_attr_unselected_color</item>
+        <!--未选中的text的颜色-->
+        <item name="ascv_unselectedTextColor">@color/test_attr_unselected_text_color</item>
+    </style>
+
+    <style name="AppcompatTextView_Weight1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppcompatTextView_Weight2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!--客户详细信息 item-->
+    <style name="MyDetailsItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!--普通的layout-->
+    <style name="MyFirstItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!--普通的layout-->
+    <style name="MyFirstItem_5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <!--NestedScrollView-->
+    <style name="MyNestedScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+        <!--<item name="android:overScrollMode">never</item>-->
+    <!--overScrollMode 半月形的阴影效果  scrollbars 滚动条不显示-->
+    <style name="MyRecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+        <!--<item name="android:nestedScrollingEnabled">false</item>-->
+
+
+
+
+    <!--下划线-->
+    <style name="MyView_16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+    <style name="MyView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+
+    <style name="item_background">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_mine_item_background</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--短语的样式-->
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/Initiate_item_Approval</item>
+        <item name="atg_borderColor">#49C120</item>
+        <item name="atg_textColor">#49C120</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="atg_textSize">10sp</item>
+        <item name="atg_horizontalSpacing">6dp</item>
+        <item name="atg_verticalSpacing">3dp</item>
+        <item name="atg_horizontalPadding">8dp</item>
+        <item name="atg_verticalPadding">2dp</item>
+    </style>
+
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">15sp</item>
+        <item name="atg_horizontalSpacing">9dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">14dp</item>
+        <item name="atg_verticalPadding">4dp</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FF3D7F</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">#FF3D7F</item>
+        <item name="atg_inputHintColor">#80FFFFFF</item>
+        <item name="atg_inputTextColor">#DEFFFFFF</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedTextColor">#FF3D7F</item>
+        <item name="atg_checkedMarkerColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+        <item name="atg_pressedBackgroundColor">#FF99B1</item>
+    </style>
+
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>//标题栏背景色
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+</resources>

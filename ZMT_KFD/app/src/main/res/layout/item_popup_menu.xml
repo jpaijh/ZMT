@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_item_popup"
+    style="@style/MyFirstItem"
+    android:background="@drawable/selector_mine_item_background"
+    android:singleLine="true"
+    android:text="供应商信息采集表及其要求的文件"
+    android:textSize="@dimen/textSize_14sp"
+    />

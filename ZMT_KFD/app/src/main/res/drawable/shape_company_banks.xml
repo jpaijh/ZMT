@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--&lt;!&ndash; 圆角 &ndash;&gt;-->
+    <!--<corners-->
+   <!--android:radius="5dp"/>-->
+    <solid
+        android:color="@android:color/white"/>
+
+    <!-- 设置圆角半径 -->
+    <!-- 渐变 -->
+    <gradient
+        android:startColor="#FF55AE7C"
+        android:centerColor="#FF75D2A5"
+        android:endColor="#FF55AE7C"
+        android:angle="180"
+        android:type="linear"
+       />
+    <!-- 间隔 -->
+
+    <!-- 大小 -->
+    <!--<size-->
+        <!--android:width="50dp"-->
+        <!--android:height="50dp"/>&lt;!&ndash; 宽度和高度 &ndash;&gt;-->
+
+
+</shape>

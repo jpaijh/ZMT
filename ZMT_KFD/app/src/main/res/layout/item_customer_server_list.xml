@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyFirstItem"
+    android:id="@+id/ll_item"
+    android:background="@drawable/selector_mine_item_background"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_item_name"
+        style="@style/AppcompatTextView_Weight1"
+        android:gravity="center_vertical"
+        android:text="国外买手"
+        android:maxLines="1"
+        android:textColor="@color/black_one_mark_87"
+        android:textSize="@dimen/textSize_18sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_item_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_correct"
+        android:visibility="gone" />
+
+</LinearLayout>

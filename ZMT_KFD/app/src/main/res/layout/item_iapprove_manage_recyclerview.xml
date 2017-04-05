@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_approve_frag_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_12sp"
+        android:text="单据编号第单据编号第三单据编号第三三" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/tv_approve_frag_value"
+        style="@style/AppcompatTextView_Weight1"
+        android:ellipsize="marquee"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="@dimen/textSize_12sp"
+        android:text="与银行、单据编号第三单据编号第三单据编号第三单据编号第三财税、"
+        autofit:minTextSize="@dimen/textSize_10sp" />
+</LinearLayout>

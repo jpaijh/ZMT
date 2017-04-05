@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_cuDetail_content"
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar"
+        android:overScrollMode="never"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_cuDetail_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+
+                    android:textIsSelectable="true"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_cuDetail_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Customer_two"
+                    android:textColor="@color/iApprove_list_btn_line"
+                    android:textSize="@dimen/textSize_16sp" />
+<!--FF55AE7C-->
+            </LinearLayout>
+
+            <View style="@style/MyView_16"/>
+
+            <RelativeLayout
+                style="@style/MyDetailsItem"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_cuDetail_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Customer_one"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_cuDetail_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableLeft="@mipmap/ic_user2"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_14sp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_cuDetail_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="6dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/approval_banner_phone3" />
+
+                <View
+                    android:id="@+id/view_cuDetail"
+                    android:layout_width="1dp"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/img_cuDetail_call"
+                    android:background="@color/line_color" />
+            </RelativeLayout>
+
+            <!--资金信息-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_funds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <LinearLayout
+                        style="@style/MyFirstItem"
+                       >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Customer_three"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_16sp" />
+
+                    </LinearLayout>
+                    <View style="@style/MyView_16"/>
+                    <LinearLayout
+                        style="@style/MyDetailsItem"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Customer_four"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_cuDetail_accountBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textIsSelectable="true"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Customer_five"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_cuDetail_financingAccount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textIsSelectable="true"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Customer_six"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_cuDetail_debtAccount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textIsSelectable="true"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Customer_seven"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_cuDetail_invoiceAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textIsSelectable="true"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/tv_volley_date"/>
+
+            </FrameLayout>
+
+            <!--详细 ，附件， 往来-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_cuDetail_basic"
+                    style="@style/MyDetailsItem"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_mine_item_background"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_customer_details1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@mipmap/ic_customer_basic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_customer_details1"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Customer_ten"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_17sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/Customer_eleven"
+                            android:textColor="@color/black_two_mark_54"
+                            android:textSize="@dimen/textSize_12sp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/ic_arrow_next" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="75dp"
+                    android:background="@color/line_color" />
+                <!--#FFC8C7CC-->
+                <RelativeLayout
+                    android:id="@+id/rl_cuDetail_attachment"
+                    style="@style/MyDetailsItem"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_mine_item_background"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_customer_details2"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@mipmap/ic_customer_attach" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_customer_details2"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Customer_fifteen"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_17sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/Customer_sixteen"
+                            android:textColor="@color/black_two_mark_54"
+                            android:textSize="@dimen/textSize_12sp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/ic_arrow_next" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="75dp"
+                    android:background="@color/line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_cuDetail_company"
+                    style="@style/MyDetailsItem"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_mine_item_background"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_customer_details3"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@mipmap/ic_customer_company" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_customer_details3"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Customer_twelve"
+                            android:textColor="@color/black_one_mark_87"
+                            android:textSize="@dimen/textSize_17sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/Customer_thirteen"
+                            android:textColor="@color/black_two_mark_54"
+                            android:textSize="@dimen/textSize_12sp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/ic_arrow_next" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--访问记录-->
+            <RelativeLayout
+                android:id="@+id/rl_cuDetail_visitRecords"
+                style="@style/MyDetailsItem"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/selector_mine_item_background"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_customer_details"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@mipmap/ic_customer_visit" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/img_customer_details"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Customer_eight"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_17sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/Customer_nine"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_arrow_next" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/material_loading_progressbar" />
+
+    <include layout="@layout/tv_no_data"/>
+
+</RelativeLayout>

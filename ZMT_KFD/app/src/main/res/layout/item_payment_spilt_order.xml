@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_spiltOrder"
+    style="@style/MyFirstItem"
+    android:background="@drawable/selector_mine_item_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/img_spiltOrder_remove"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_spiltOrder_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/Payment_new_twenty_one"
+            android:textColor="@color/black_one_mark_87"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_spiltOrder_settleAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--<android.support.v7.widget.AppCompatImageView-->
+        <!--android:id="@+id/image_right1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@mipmap/ic_arrow_next" />-->
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_spiltOrder_remove"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_remove72" />
+
+</RelativeLayout>

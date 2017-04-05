@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minHeight="155dp"
+    android:gravity="center"
+    android:background="@color/white_two_mark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/item_img"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_home_this_appvoral"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:textColor="@color/black_one_mark_87"
+        android:text="士大夫豆腐干"
+        android:textSize="@dimen/textSize_14sp" />
+
+</LinearLayout>

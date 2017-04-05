@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bank_slip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_bankSlip_name"
+        style="@style/MyFirstItem"
+        android:singleLine="true"
+        android:text="@string/bankSlip_one"
+        android:textColor="@color/black_one_mark_87"
+        android:textSize="@dimen/textSize_16sp" />
+
+    <View style="@style/MyView_16" />
+
+    <LinearLayout
+        style="@style/MyFirstItem"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="13">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:singleLine="true">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_bankSlip_amountName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bankSlip_two"
+                    android:textColor="@color/black_three_mark_38"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_bankSlip_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text=" (USD)"
+                    android:textColor="@color/black_three_mark_38"
+                    android:textSize="@dimen/textSize_12sp" />
+            </LinearLayout>
+
+            <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_bankSlip_leftClaim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="123,24243424.00"
+            android:textColor="@color/black_one_mark_87"
+            android:textSize="@dimen/textSize_24sp"
+            autofit:sizeToFit="true"
+            autofit:minTextSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_center"
+                android:layout_width="1dp"
+                android:layout_height="44dp"
+                android:background="@color/line_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_bankSlip_rateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bankSlip_three"
+            android:textColor="@color/black_three_mark_38"
+            android:textSize="@dimen/textSize_12sp" />
+
+            <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_bankSlip_RMBRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="6.6633848"
+            android:textColor="@color/black_one_mark_87"
+            android:textSize="@dimen/textSize_24sp"
+            autofit:minTextSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/MyView" />
+
+    <LinearLayout
+        android:id="@+id/ll_bankSlip_one"
+        style="@style/MyFirstItem"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            style="@style/AppcompatTextView_Weight1"
+            android:singleLine="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bankSlip_four"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_bankSlip_netReceipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2345675435"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textSize_14sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_bankSlip_receiptDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-09-09"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bankSlip_two"
+        style="@style/MyFirstItem"
+        android:gravity="end"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bankSlip_seven"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_bankSlip_claimedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Payment_five"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_invoice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MyDetailsItem"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_invoice_Name"
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/list_Payment_one"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_invoice_statusStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_Payment_two"
+                android:textColor="#FF55AE7C"
+                android:textSize="@dimen/textSize_16sp" />
+<!--  android:textIsSelectable="true" 可以复制-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_invoice_code"
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/invoice_one"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="@string/invoice_two"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_invoice_WithTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:textColor="@color/red"
+                    android:text="67,620.00"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/MyView_16"/>
+
+    <LinearLayout
+        style="@style/MyFirstItem">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_invoice_orderCode"
+            style="@style/AppcompatTextView_Weight1"
+            android:textSize="@dimen/textSize_14sp"
+            android:textColor="@color/black_two_mark_54"
+            android:layout_marginRight="5dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_invoice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/textSize_14sp"
+            android:textColor="@color/black_two_mark_54"
+            android:text="@string/Payment_five"
+            />
+    </LinearLayout>
+
+</LinearLayout>

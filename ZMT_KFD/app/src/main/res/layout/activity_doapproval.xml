@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tag="http://schemas.android.com/apk/res-auto"
+    android:background="#f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_title_center_black" />
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar"
+        style="@style/MyCardView"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <com.thinkcool.circletextimageview.CircleTextImageView
+                    android:id="@+id/nav_circleimgview_do"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    app:citv_border_width="2dp"
+                    app:citv_border_color="@color/white"
+                    android:src="@mipmap/approval_banner_avatar"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_toRightOf="@+id/nav_circleimgview_do"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_do_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_18sp"
+                        />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_do_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_two_mark_54"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="@dimen/textSize_15sp"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line_color" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_do_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="@dimen/textSize_12sp"
+                android:hint="请选择"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+               >
+
+                <RadioButton
+                    android:id="@+id/rbtn_do_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="同意"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/color_theme"
+                    android:background="@drawable/select_doapproval_rb"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbtn_do_unagree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="不同意"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColorLink="@color/color_theme"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:textColor="@color/color_theme"
+                    android:background="@drawable/select_doapproval_rb"
+                  />
+            </RadioGroup>
+
+            <com.example.ZMTCSD.view.TagGroup
+                android:id="@+id/tag_group_do"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                tag:atg_isAppendMode="false"
+                tag:atg_borderColor="@color/line_color"
+                tag:atg_textColor="@color/black_two_mark_54"
+                tag:atg_backgroundColor="@color/white"
+                tag:atg_selectBackgroundColor="@color/color_ripple_btn"
+                tag:atg_textSize="@dimen/textSize_16sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:paddingLeft="5dp"
+                android:orientation="vertical">
+                <com.example.ZMTCSD.view.LimitedEdittext.LimitedEditText
+                    android:id="@+id/ed_do_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/shape_edittext_bg"
+                    android:singleLine="false"
+                    android:minLines="5"
+                    android:maxLines="7"
+                    android:gravity="top"
+                    android:hint="请填写备注"
+                    app:formatter="%s/%s"
+                    app:limitCount="140"
+                    app:warningFontColor="@android:color/black"
+                    app:wordCountTextView="@+id/countTextView" />
+                <TextView
+                    android:id="@+id/countTextView"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rl_do_submit"
+        android:background="@color/black_two_mark_54"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_do_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_20sp"
+            android:background="@color/doApproval_green"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

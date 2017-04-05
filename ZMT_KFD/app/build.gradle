@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.example.ZMTCSD"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+        //2017-2-22 发布版本
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// AndroidAnnotations 需要
+def AAVersion = '4.0.0' // 15/03/2016 The 4.0.0 release is out !（目前最新：检查日期 2016.4.7）
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson-2.3.1.jar')
+    //角标
+    compile files('libs/android-viewbadger.jar')
+    compile 'com.android.support:appcompat-v7:24.1.0'
+    // AndroidAnnotations
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    // AndroidAnnotations
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    // design
+    compile 'com.android.support:design:24.2.0'
+    //cardview
+    compile 'com.android.support:cardview-v7:24.1.0'
+    //recyclerview
+    compile 'com.android.support:recyclerview-v7:24.1.0'
+    //volley
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    // logUtils:Log 日志工具
+    compile 'com.apkfuns.logutils:library:1.4.2'
+    //百分百布局
+    compile 'com.android.support:percent:24.1.0'
+    // logUtils:Log 日志工具
+    //    compile 'com.orhanobut:logger:1.14'
+    //圆形图片
+    compile 'com.github.thinkcool:circletextimageview:1.0.20151218'
+    //fastjson解析工具
+    compile 'com.alibaba:fastjson:1.2.12'
+    //material_loading_progressbar:MaterialDesign风格的loading progressbar
+    compile 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    //时间轴
+    compile 'com.github.alorma:timelineview:2.3.0'
+    //图片加载库
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //标签 tag 控件点击之后没有出现选中的颜色
+    //    compile 'me.gujun.android.taggroup:library:1.4@aar'
+    //加载时的progress 仿的是ios
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+    //popupwindow 弹出框
+    //    compile 'com.github.razerdp:BasePopup:v1.1.7'
+    //MateerialDesign风格的edittext
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    //okhttp
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+//    //可以滑动删除的recyler 在添加多个服务器和用户是使用了
+//    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    //可以滑动删除的recyler ，在客户的附件中使用了
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.1'
+    // PhotoView: 图片放大缩小使用多点触控和双击，且支持多张图片水平滚动浏览
+    compile 'com.commit451:PhotoView:1.2.4'
+    //水波纹
+    compile 'com.balysv:material-ripple:1.0.2'
+    //recyclerview的动画效果
+    compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+    //recyclerView的下划线
+    compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+     //动态更改TextView内容字体的大小
+    compile 'me.grantland:autofittextview:0.2.1'
+    // 显示富文本
+    compile 'com.zzhoujay.richtext:richtext:2.0.13'
+    //popup和dialog
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    //图片选择器，在客户上传文件
+    compile 'com.github.glassLake:PhotoPicker:1.0.2'
+    //使用鲁班来压缩图片
+    compile 'me.shaohui.advancedluban:library:1.3.0'
+    //status的颜色
+    compile 'com.jaeger.statusbaruitl:library:1.3.5'
+    //时间选择器
+    compile 'com.bigkoo:pickerview:2.1.1'
+    //这个是支持农历的分支 compile 'com.bigkoo:pickerview:lunar.1.0'
+//    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //Fragment的back键处理方案
+    compile 'com.github.ikidou:FragmentBackHandler:2.1'
+//蒲公英sdk
+    compile 'com.pgyersdk:sdk:2.5.4'
+    //开关按钮
+    compile 'com.github.zcweng:switch-button:0.0.2@aar'
+}

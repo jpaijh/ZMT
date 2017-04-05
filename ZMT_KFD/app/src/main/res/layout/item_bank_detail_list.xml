@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/selector_mine_item_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout style="@style/MyFirstItem"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_BKDetails_name"
+            style="@style/AppcompatTextView_Weight1"
+            android:textSize="@dimen/textSize_16sp"
+            android:textColor="@color/black_one_mark_87"
+            android:layout_marginRight="5dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_BKDetails_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BankSlip_list_five"
+            android:textColor="@color/list_status"
+            android:textSize="@dimen/textSize_16sp" />
+
+
+    </LinearLayout>
+
+    <View style="@style/MyView_16"/>
+
+    <RelativeLayout
+        style="@style/MyFirstItem">
+
+        <View
+            android:id="@+id/view_center"
+            android:layout_width="1dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:background="@color/line_color"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/view_center"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="@string/BankSlip_list_one"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_BKDetails_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text=" (USD)"
+                    />
+
+
+            </LinearLayout>
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_BKDetails_claimAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/textSize_24sp"
+                android:textColor="@color/red"
+                android:singleLine="true"
+                autofit:minTextSize="@dimen/textSize_12sp"
+                android:text="123,234.00"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/view_center"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_12sp"
+                android:textColor="@color/black_two_mark_54"
+                android:text="@string/BankSlip_list_two"
+                />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_BKDetails_RMBRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/textSize_24sp"
+                android:textColor="@color/red"
+                android:singleLine="true"
+                autofit:minTextSize="@dimen/textSize_12sp"
+                android:text="6.6648"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View style="@style/MyView"/>
+
+    <LinearLayout
+        style="@style/MyFirstItem"
+        android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_BKDetails_Date"
+                style="@style/AppcompatTextView_Weight1"
+                android:textSize="@dimen/textSize_12sp"
+                android:textColor="@color/black_two_mark_54"
+                android:text="0001-01-01"
+                />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_12sp"
+                android:textColor="@color/black_two_mark_54"
+                android:text="@string/BankSlip_list_three"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_BKDetails_RMBAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_12sp"
+                android:textColor="@color/black_two_mark_54"
+                android:text="6.6648"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

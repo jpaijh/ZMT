@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white_noicon" />
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <!--android:text="@string/bankClaim_one"-->
+            <!--android:text="@string/bankClaim_two"-->
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="16dp"
+                android:text="@string/bankClaim_three"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <!--选择客户-->
+            <LinearLayout
+                android:id="@+id/ll_bankClaim_customer"
+                style="@style/MyDetailsItem"
+                android:background="@drawable/selector_mine_item_background"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/bankClaim_four"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_bankClaim_customerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_arrow_next"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MyDetailsItem"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bankClaim_five"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/med_bankClaim_claimAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="@string/bankClaim_six"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_one_mark_87"
+                    android:digits="1234567890."
+                    android:maxLength="20"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize_24sp"
+                    app:met_clearButton="true"
+                    app:met_hideUnderline="true" />
+
+                <View style="@style/MyView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_bankClaim_Amount"
+                        style="@style/AppcompatTextView_Weight1"
+                        android:ellipsize="marquee"
+                        android:text="@string/bankClaim_seven"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_bankClaim_allAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bankClaim_eight"
+                        android:textColor="@color/color_theme"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MyDetailsItem"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bankClaim_nine"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/med_bankClaim_RMBRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="@string/bankClaim_six_1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_24sp"
+                    android:digits="1234567890."
+                    android:maxLength="20"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true"
+                    app:met_clearButton="true"
+                    app:met_hideUnderline="true" />
+
+                <View style="@style/MyView" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_bankClaim_bankRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/bankClaim_eleven"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_rmbClaimAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/bankClaim_twelve"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/tv_bankClaim_Claim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/select_btn_next"
+                android:enabled="false"
+                android:text="@string/bankClaim_thirteen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

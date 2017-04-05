@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:text="@string/Payment_new_eleven"
+        android:textColor="@color/black_two_mark_54"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--币别-->
+        <LinearLayout
+            android:id="@+id/ll_pyNew_currency"
+            style="@style/MyFirstItem"
+            android:background="@drawable/selector_mine_item_background"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_new_twelve"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_pyNew_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/ic_arrow_next"
+                android:gravity="end"
+                android:singleLine="true"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+        <!--汇率-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:descendantFocusability="afterDescendants"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_new_thirteen"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <com.example.ZMTCSD.view.AppCompatClearEditText
+                android:id="@+id/med_pyNew_RMBRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:digits="1234567890."
+                android:drawablePadding="10dp"
+                android:gravity="end"
+                android:inputType="number|numberDecimal"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+            <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+            <!--android:id="@+id/med_pyNew_RMBRate"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:gravity="end"-->
+            <!--android:textColor="@color/black_one_mark_87"-->
+            <!--android:digits="1234567890."-->
+            <!--android:maxLength="20"-->
+            <!--android:singleLine="true"-->
+            <!--android:inputType="number|numberDecimal"-->
+            <!--android:textSize="@dimen/textSize_16sp"-->
+            <!--app:met_clearButton="true"-->
+            <!--app:met_hideUnderline="true" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MyFirstItem_5"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AppcompatTextView_Weight1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/Payment_new_seventeen"
+            android:textColor="@color/black_one_mark_87"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/btn_pyNew_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            app:sb_checked="true" />
+
+    </LinearLayout>
+
+    <!--拆分订单的类 -->
+    <LinearLayout
+        android:id="@+id/ll_spiltOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="16dp"
+            android:text="@string/Payment_new_eighteen"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/recycler_pyNew"
+            style="@style/MyRecyclerView"
+            android:nestedScrollingEnabled="false"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <LinearLayout
+            android:id="@+id/ll_pyNew_addOrder"
+            style="@style/MyFirstItem"
+            android:background="@drawable/selector_mine_item_background">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_add72"
+                android:scaleType="center"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:text="@string/Payment_new_twenty"
+                android:textColor="@color/blue_500"
+                android:textSize="@dimen/textSize_16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:text="@string/Payment_new_fourteen"
+        android:textColor="@color/black_two_mark_54"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--支付金额-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_pyNew_PaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_new_fifteen"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <com.example.ZMTCSD.view.AppCompatClearEditText
+                android:id="@+id/med_pyNew_PaymentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:digits="1234567890."
+                android:drawablePadding="10dp"
+                android:gravity="end"
+                android:inputType="number|numberDecimal"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <!--结算金额-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_pyNew_SettleAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_new_sixteen"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <com.example.ZMTCSD.view.AppCompatClearEditText
+                android:id="@+id/med_pyNew_SettleAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:digits="1234567890."
+                android:drawablePadding="10dp"
+                android:enabled="false"
+                android:gravity="end"
+                android:inputType="number|numberDecimal"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_pyNew_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="16dp"
+        android:text="@string/Payment_new_twenty_two"
+        android:textColor="@color/black_two_mark_54"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_pyNew_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/select_btn_next"
+        android:enabled="false"
+        android:text="@string/Payment_new_nineteen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_18sp" />
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <include layout="@layout/material_loading_progressbar" />
+
+    <include layout="@layout/tv_no_data"/>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_InDetail_content"
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_InDetail_Corporation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_16sp"
+                    android:textColor="@color/black_one_mark_87"
+                    android:text="宁波市镇海顺远箱包有限公司"
+                    />
+            </LinearLayout>
+
+            <View style="@style/MyView_16" />
+            <!--税-->
+            <RelativeLayout
+                android:background="@color/white"
+                style="@style/MyFirstItem">
+
+                <View
+                    android:id="@+id/view_center"
+                    android:layout_width="1dp"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/line_color"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/view_center"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_12sp"
+                        android:textColor="@color/black_two_mark_54"
+                        android:text="@string/Invoice_one"
+                        />
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tv_InDetail_WithOutTax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/textSize_24sp"
+                        android:textColor="@color/red"
+                        android:singleLine="true"
+                        autofit:minTextSize="@dimen/textSize_12sp"
+                        android:text="$ 2247233,445.00"
+                        />
+ <!-- android:textIsSelectable="true" 可以复制文字-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/view_center"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_12sp"
+                        android:textColor="@color/black_two_mark_54"
+                        android:text="@string/Invoice_two"
+                        />
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tv_InDetail_Tax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/textSize_24sp"
+                        android:textColor="@color/red"
+                        android:singleLine="true"
+                        autofit:minTextSize="@dimen/textSize_12sp"
+                        android:text="$ 2247233,445.00"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/MyView_16" />
+            <!--价税合计-->
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="@string/Invoice_three"
+                    />
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tv_InDetail_WithTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/textSize_24sp"
+                    android:textColor="@color/red"
+                    android:singleLine="true"
+                    autofit:minTextSize="@dimen/textSize_12sp"
+                    android:text="$ 2247233,445.00"
+                    />
+            </LinearLayout>
+
+            <View style="@style/MyView_16" />
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:gravity="end">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="@string/Invoice_four"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_InDetail_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="2016-08-16"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MyDetailsItem"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/black_two_mark_54"
+                        android:text="@string/Invoice_five"
+                        />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_InDetail_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/black_one_mark_87"
+                        android:text="16NUGG001"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/black_two_mark_54"
+                        android:text="@string/Invoice_six"
+                        />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_InDetail_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/black_one_mark_87"
+                        android:text="16NUGG001"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/black_two_mark_54"
+                        android:text="@string/Invoice_seven"
+                        />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_InDetail_orderCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16sp"
+                        android:textColor="@color/black_one_mark_87"
+                        android:text="16NUGG001"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_InDetail_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:text="商品信息"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_InDetail"
+                    style="@style/MyRecyclerView"
+                    android:nestedScrollingEnabled="false"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

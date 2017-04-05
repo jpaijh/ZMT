@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_orDetail_content"
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--头部-->
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_orDetail_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@string/Order_one"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_orDetail_statusStr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Order_two"
+                    android:textColor="#FF55AE7C"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </LinearLayout>
+
+            <View style="@style/MyView_16" />
+            <!--报关金额-->
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="@string/Order_three"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_orDetail_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/textSize_24sp"
+                    android:textColor="@color/red"
+                    android:text="$ 000,000.00"
+                    />
+            </LinearLayout>
+            <View style="@style/MyView_16" />
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:gravity="right"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="@string/Order_four"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_orDetail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textColor="@color/black_two_mark_54"
+                    android:text="2016-08-16"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:layout_marginTop="20dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_16sp"
+                    android:textColor="@color/black_one_mark_87"
+                    android:text="@string/Order_five"
+                    />
+            </LinearLayout>
+
+            <View style="@style/MyView_16" />
+
+            <RelativeLayout
+                android:background="@color/white"
+                style="@style/MyDetailsItem">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orDetail_AName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Order_six"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orDetail_AContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableLeft="@mipmap/ic_user3"
+                        android:drawablePadding="6dp"
+                        android:text="@string/Order_seven"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_14sp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_orDetail_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="6dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/approval_banner_phone3" />
+
+                <View
+                    android:id="@+id/view_orDetail"
+                    android:layout_width="1dp"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/img_orDetail_call"
+                    android:background="@color/line_color" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--收支状态-->
+                <LinearLayout
+                    android:id="@+id/ll_inAndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    >
+                    <LinearLayout
+                        style="@style/MyFirstItem"
+                        >
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_16sp"
+                            android:textColor="@color/black_one_mark_87"
+                            android:text="@string/Order_eight"
+                            />
+                    </LinearLayout>
+                    <View style="@style/MyView_16" />
+                    <LinearLayout
+                        style="@style/MyFirstItem"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Order_nine"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_orDetail_income"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+45,345.00"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Order_ten"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_orDetail_receiptAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+12,324.00"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Order_eleven"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_orDetail_rebateAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+12,324.00"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Order_twelve"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_orDetail_expense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-45,345.00"
+                                android:textColor="@color/black_one_mark_87"
+                                android:textSize="@dimen/textSize_16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Order_thirteen"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_orDetail_payAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-12,324.00"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@string/Order_fourteen"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_orDetail_costAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-12,324.00"
+                                android:textColor="@color/black_two_mark_54"
+                                android:textSize="@dimen/textSize_14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View style="@style/MyView_16" />
+                    <LinearLayout
+                        style="@style/MyFirstItem"
+                        android:gravity="right"
+                        >
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_18sp"
+                            android:textColor="@color/black_one_mark_87"
+                            android:text="@string/Order_fifteen"
+                            />
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_orDetail_profitAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_18sp"
+                            android:textColor="@color/red"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/tv_volley_date"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/Order_sixteen"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_orDetail"
+                    style="@style/MyRecyclerView"
+                    android:nestedScrollingEnabled="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="30dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/v_financeFour_SettlePdf"
+                    style="@style/MyFirstItem"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/ic_approval_file_pdf3"
+                    android:drawableRight="@mipmap/ic_arrow_next"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/selector_mine_item_background"
+                    android:singleLine="true"
+                    android:text="@string/Order_seventeen"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/material_loading_progressbar" />
+
+    <include layout="@layout/tv_no_data"/>
+
+</RelativeLayout>

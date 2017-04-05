@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rl_head_all"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/details_Approval"
+    android:scaleType="fitXY"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/rl_head_buttom"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="16dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_head_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_22sp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_head_approvalType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_two_mark"
+            android:textSize="@dimen/textSize_17sp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_head_approvalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_two_mark"
+            android:textSize="@dimen/textSize_17sp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_head_buttom"
+        style="@style/MyFirstItem"
+        android:background="#20ffffff"
+        android:layout_alignParentBottom="true">
+
+        <com.thinkcool.circletextimageview.CircleTextImageView
+            android:id="@+id/nav_circleimgview_head"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            app:citv_border_width="2dp"
+            app:citv_border_color="@color/white"
+            android:src="@mipmap/approval_banner_avatar"
+            />
+<!--  app:citv_border_width="2dp"圆的宽度  圆的颜色
+            app:citv_border_color="@color/white"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_toRightOf="@+id/nav_circleimgview_head"
+            android:layout_toLeftOf="@+id/img_head_call"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_head_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18sp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_head_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_15sp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white_two_mark"
+               />
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true">-->
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_head_call"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@mipmap/ic_approval_banner_phone3"/>
+        <!--</LinearLayout>-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

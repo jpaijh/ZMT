@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:text="@string/Payment_newFinance4_one"
+        android:textColor="@color/black_two_mark_54"
+        android:textSize="@dimen/textSize_14sp" />
+    <!--客户类型-->
+    <RelativeLayout
+        style="@style/MyFirstItem"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <!--  android:background="@drawable/selector_mine_item_background"-->
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_pynew_customer" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_financeFour_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/image_right"
+            android:layout_toRightOf="@+id/image_left"
+            android:singleLine="true"
+            android:text="请选择收款单位"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_16sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:text="@string/Payment_newFinance4_two"
+        android:textColor="@color/black_two_mark_54"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--支付金额-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_newFinance4_three"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_financeFour_invoiceAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <!--已支付金额-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_newFinance4_four"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_financeFour_paidAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <!--未支付金额-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_newFinance4_five"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_financeFour_UnpaidAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:text="@string/Payment_newFinance4_six"
+        android:textColor="@color/black_two_mark_54"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--支付金额-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_new_fifteen"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <com.example.ZMTCSD.view.AppCompatClearEditText
+                android:id="@+id/ed_financeFour_paymentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:digits="1234567890."
+                android:drawablePadding="10dp"
+                android:gravity="end"
+                android:inputType="number|numberDecimal"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+        <View style="@style/MyView_16" />
+
+        <!--结算金额-->
+        <LinearLayout
+            style="@style/MyFirstItem"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/Payment_new_sixteen"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <com.example.ZMTCSD.view.AppCompatClearEditText
+                android:id="@+id/ed_financeFour_settleAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:digits="1234567890."
+                android:drawablePadding="10dp"
+                android:gravity="end"
+                android:inputType="number|numberDecimal"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_financeFour_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/select_btn_next"
+        android:enabled="false"
+        android:text="@string/Payment_newFinance4_seven"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_18sp" />
+
+</LinearLayout>

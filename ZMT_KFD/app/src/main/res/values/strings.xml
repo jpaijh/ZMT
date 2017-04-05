@@ -1,0 +1,607 @@
+<resources>
+    <!--<string name="app_name">天易通</string>-->
+    <string name="app_name">自贸通客服端</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="token_volley_error">刷新token不成功.</string>
+
+    <!--主界面的-->
+    <string name="home_me_approval">我审批的</string>
+    <string name="home_me_start">我发起的</string>
+    <!--<string name="home_me_approval">付款审批</string>-->
+    <!--<string name="home_me_start">付款申报</string>-->
+    <string name="home_me_message">消息中心</string>
+    <string name="home_me_customer">客户管理</string>
+    <string name="home_me_orders">订单管理</string>
+    <string name="home_me_Invoice">增票管理</string>
+    <string name="home_me_bankSlip">水单管理</string>
+    <string name="home_me_payment">付款管理</string>
+    <string name="home_me_buyerCode">外商代码申请</string>
+    <string name="home_me_LCLimit">中信保限额申请</string>
+    <string name="home_me_InsureApply">中信保投保</string>
+    <string name="home_me_BankApply">银行代码申请</string>
+
+    <!--<string name="home_me_customer1">账户的基本信息</string>-->
+    <!--审批列表-->
+    <string name="Approve_item_UnApproval">未处理</string>
+    <string name="Approve_item_Approval">已处理</string>
+    <string name="Initiate_item_InApproval">审批中</string>
+    <string name="Initiate_item_Approval">已通过</string>
+    <string name="Initiate_item_UnApproval">未通过</string>
+    <string name="Initiate_item_RepealApproval">已撤销</string>
+
+    <!-- 审批列表中的显示的文字-->
+    <string name="Approve_one">单据编号:</string>
+    <string name="Approve_two">报审人员:</string>
+    <string name="Approve_two2">审批状态:</string>
+    <string name="Approve_three">报审时间:</string>
+
+    <string name="Approve_more_one">展开</string>
+    <string name="Approve_more_two">收起</string>
+
+
+    <!--各个界面toolbar的头部信息-->
+    <string name="toolbar_InitiateList">我发起</string>
+    <string name="toolbar_IApproveList">我审批</string>
+    <string name="toolbar_IApproveSearch">关键字搜索</string>
+    <string name="toolbar_IApproveDetails">详情</string>
+    <string name="toolbar_Message">消息列表</string>
+    <string name="toolbar_MessageDetails">消息查看</string>
+    <string name="toolbar_PhotoView">查看图片</string>
+    <string name="toolbar_InvoiceList">增票管理</string>
+    <string name="toolbar_InvoiceDetails">增票详情</string>
+    <string name="toolbar_OrderList">订单管理</string>
+    <string name="toolbar_OrderDetails">订单</string>
+    <string name="toolbar_OrderServer">服务项</string>
+    <string name="toolbar_OrderItemsAction">服务项状态</string>
+    <string name="toolbar_CustomerList">客户管理</string>
+    <string name="toolbar_CustomerList1">提款客户</string>
+    <string name="toolbar_CustomerList2">收款单位</string>
+    <string name="toolbar_CustomerList3">收款银行</string>
+    <string name="toolbar_PaymentFinanceOrder">选择融资款订单</string>
+    <string name="toolbar_PaymentOrder">选择资金订单</string>
+
+    <string name="toolbar_CustomerNew">新建客户</string>
+    <string name="toolbar_CustomerDetails">客户</string>
+    <string name="toolbar_CustomerType">客户类型</string>
+    <string name="toolbar_CustomerServerItem">客户服务项</string>
+
+    <string name="toolbar_CustomerAttachment">文件</string>
+    <string name="toolbar_CustomerAttachment1">客户附件</string>
+    <string name="toolbar_CustomerVisit">访问记录</string>
+    <string name="toolbar_CustomerBasic">详细信息</string>
+    <string name="toolbar_CustomerCompany">往来单位</string>
+    <string name="toolbar_CompanyDetails">往来单位详情</string>
+    <string name="toolbar_Company_banks">银行信息</string>
+
+    <string name="toolbar_BankSlipList">水单列表</string>
+    <string name="toolbar_BankSlipDetails">水单详情</string>
+    <string name="toolbar_BankSlipClaim">水单认领</string>
+    <string name="toolbar_BankSlipOrder">水单拆分到订单</string>
+
+    <string name="toolbar_PaymentList">付款管理</string>
+    <string name="toolbar_PaymentDetails">付款单</string>
+    <string name="toolbar_PaymentNew">代客提款</string>
+    <string name="toolbar_paymentNewGuarantee">担保方式</string>
+    <string name="toolbar_paymentNewMethod">付款方式</string>
+    <string name="toolbar_paymentNewSubType">费用方式</string>
+
+    <string name="toolbar_company_buyer_code">外商代码申请</string>
+    <string name="toolbar_company_LCLimit">中信保限额申请</string>
+    <string name="toolbar_company_BankApply">银行代码申请</string>
+    <string name="toolbar_company_InsureApply">中信保投保</string>
+    <string name="toolbar_company_LCLimit_Detail">限额详情</string>
+    <string name="toolbar_company_Insure_Detail">投保详情</string>
+    <string name="toolbar_company_BuyerCode_details">外商代码详情</string>
+    <string name="toolbar_company_reply">中信保批复情况</string>
+    <string name="toolbar_SettingAbout">关于</string>
+    <string name="toolbar_SettingAbout_server">服务器信息</string>
+    <string name="toolbar_SettingPhrase">快捷短语设置</string>
+    <string name="toolbar_SettingServer">服务器</string>
+    <string name="toolbar_SettingPermission">权限查看</string>
+
+    <!--客户详情-->
+    <string name="Customer_one">客户编码：</string>
+    <string name="Customer_two">已通过</string>
+    <string name="Customer_three">资金信息</string>
+    <string name="Customer_four">普通账户</string>
+    <string name="Customer_five">融资账户</string>
+    <string name="Customer_six">融资欠款</string>
+    <string name="Customer_seven">总开票额</string>
+    <string name="Customer_eight">访问记录</string>
+    <string name="Customer_nine">查看客户的访问记录</string>
+    <string name="Customer_ten">详细信息</string>
+    <string name="Customer_eleven">查看客户详细信息</string>
+    <string name="Customer_fifteen">附件信息</string>
+    <string name="Customer_sixteen">附件的上传与查看</string>
+    <string name="Customer_twelve">往来单位</string>
+    <string name="Customer_thirteen">查看客户往来单位信息</string>
+    <string name="Customer_fourteen">●</string>
+
+    <string name="Customer_attach_one">没有附件信息</string>
+    <!--来访记录-->
+    <string name="Customer_visit_one">赵兰兰</string>
+    <string name="Customer_visit_two">2016-08-26 14:21:34</string>
+    <string name="Customer_visit_three">这是一条访问记录.</string>
+
+    <!--外来单位中的银行信息-->
+    <string name="Company_bank_one">银行信息</string>
+    <string name="Company_bank_two">客户</string>
+    <string name="Company_bank_three">往来单位</string>
+    <string name="Company_bank_four">账户状态</string>
+    <string name="Company_bank_five">开户银行</string>
+    <string name="Company_bank_six">银行账号</string>
+    <string name="Company_bank_seven">Swift编号</string>
+
+    <!--新建客户界面-->
+    <string name="Customer_new_one">客户名称</string>
+    <string name="Customer_new_two">取消</string>
+    <string name="Customer_new_three">选择客户类型</string>
+    <string name="Customer_new_four">客户类型</string>
+    <string name="Customer_new_five">客户编码</string>
+    <string name="Customer_new_six">客户登录名默认为客户编码,</string>
+    <string name="Customer_new_seven">客户登录密码默认为:123456.</string>
+    <string name="Customer_new_eight">联系人</string>
+    <string name="Customer_new_nine">电话</string>
+    <string name="Customer_new_ten">邮箱</string>
+    <string name="Customer_new_eleven">服务项</string>
+    <string name="Customer_new_fifteen">创建</string>
+
+    <!--订单详情-->
+    <string name="Order_one">订单号：</string>
+    <string name="Order_two">已通过</string>
+    <string name="Order_three">报关金额</string>
+    <string name="Order_four">下单时间：</string>
+    <string name="Order_five">客户</string>
+    <string name="Order_six">杭州全顺科技</string>
+    <string name="Order_seven">张三 - 15068337461</string>
+    <string name="Order_eight">收支状态</string>
+    <string name="Order_nine">收入</string>
+    <string name="Order_ten">收汇金额 RMB</string>
+    <string name="Order_eleven">退税金额 RMB</string>
+    <string name="Order_twelve">支出</string>
+    <string name="Order_thirteen">付款合计 RMB</string>
+    <string name="Order_fourteen">费用合计 RMB</string>
+    <string name="Order_fifteen">利润：</string>
+    <string name="Order_sixteen">服务项信息</string>
+    <string name="Order_seventeen">结算单</string>
+
+    <!--增票详情-->
+    <string name="Invoice_one">不含税金额</string>
+    <string name="Invoice_two">税额</string>
+    <string name="Invoice_three">价税合计</string>
+    <string name="Invoice_four">开票日期：</string>
+    <string name="Invoice_five">增票代码：</string>
+    <string name="Invoice_six">增票号码：</string>
+    <string name="Invoice_seven">订单号码：</string>
+    <string name="Invoice_eight">商品列表（</string>
+    <string name="Invoice_nine">条商品记录）</string>
+
+    <string name="Invoice_list_one">税率：</string>
+    <string name="Invoice_list_two">单价</string>
+    <string name="Invoice_list_three">数量</string>
+    <string name="Invoice_list_four">@string/Invoice_one</string>
+    <string name="Invoice_list_five">@string/Invoice_two</string>
+    <string name="Invoice_list_six">价税合计：</string>
+
+    <!--水单详情-->
+    <string name="BankSlip_one"> 付 款 人：</string>
+    <string name="BankSlip_two">收汇日期：</string>
+    <string name="BankSlip_three">收汇金额</string>
+    <string name="BankSlip_four">- 国内费用</string>
+    <string name="BankSlip_five">- 国外费用</string>
+    <string name="BankSlip_six">净收汇金额：</string>
+    <string name="BankSlip_seven">银行结算汇率：</string>
+    <string name="BankSlip_eight">折RMB：</string>
+    <string name="BankSlip_nine">客户认领（已完成认领）</string>
+    <string name="BankSlip_nine_one">客户认领（暂未认领）</string>
+    <!--<string name="BankSlip_nine_two">客户认领（未认领金额：USD 123,390.00）</string>-->
+    <string name="BankSlip_nine_two">客户认领（未认领金额：</string>
+    <string name="BankSlip_nine_three">）</string>
+    <string name="BankSlip_list_one">认领金额</string>
+    <string name="BankSlip_list_two">客户结算汇率</string>
+    <string name="BankSlip_list_three">折RMB：</string>
+    <string name="BankSlip_list_four">认领时间：</string>
+    <string name="BankSlip_list_five">未拆分</string>
+    <string name="BankSlip_list_six">条订单</string>
+
+    <string name="bank_slips_option">待认领</string>
+    <string name="bank_slips_option1">已认领</string>
+
+    <!--水单列表-->
+    <string name="bankSlip_one">宁波市镇海顺远箱包有限公司</string>
+    <string name="bankSlip_two">未认领金额 </string>
+    <string name="bankSlip_three">银行结算汇率</string>
+    <string name="bankSlip_four">净收汇：</string>
+    <string name="bankSlip_five">认领金额 </string>
+    <string name="bankSlip_six">客户结算汇率</string>
+    <string name="bankSlip_seven">认领时间：</string>
+
+    <!--水单认领-->
+    <string name="bankClaim_one">水单认领</string>
+    <string name="bankClaim_two">取消 </string>
+    <string name="bankClaim_three">选择认领的客户</string>
+    <string name="bankClaim_four">客户</string>
+    <string name="bankClaim_five">认领金额  (USD)</string>
+    <string name="bankClaim_six">请输入认领金额</string>
+    <string name="bankClaim_six_1">请输入汇率</string>
+    <string name="bankClaim_seven">剩余可认领：</string>
+    <string name="bankClaim_eight">全部认领</string>
+    <string name="bankClaim_nine">客户结算汇率</string>
+    <string name="bankClaim_eleven">银行结算汇率：</string>
+    <string name="bankClaim_twelve">折人民币：</string>
+    <string name="bankClaim_thirteen">认领</string>
+
+    <!--待客提款 -->
+    <string name="Payment_new_one">提款客户</string>
+    <string name="Payment_new_two">付款方式与类型</string>
+    <string name="Payment_new_three">付款方式</string>
+    <string name="Payment_new_four">担保方式</string>
+    <string name="Payment_new_five">资金来源</string>
+    <string name="Payment_new_six">App端暂不支持融资账户的提款。</string>
+    <string name="Payment_new_seven">下一步（1/3）</string>
+    <string name="Payment_new_eight">收款单位</string>
+    <string name="Payment_new_nine">收款银行</string>
+    <string name="Payment_new_ten">下一步（2/3）</string>
+    <string name="Payment_new_eleven">币别与汇率</string>
+    <string name="Payment_new_twelve">币别</string>
+    <string name="Payment_new_thirteen">汇率</string>
+    <string name="Payment_new_fourteen">提款金额</string>
+    <string name="Payment_new_fifteen">支付金额</string>
+    <string name="Payment_new_sixteen">结算金额</string>
+    <string name="Payment_new_seventeen">是否将金额拆分到具体订单？</string>
+    <string name="Payment_new_eighteen">金额拆分到订单</string>
+    <string name="Payment_new_nineteen">提交提款申请（3/3）</string>
+    <string name="Payment_new_twenty">添加订单</string>
+    <string name="Payment_new_twenty_one">点击添加拆分的订单</string>
+    <string name="Payment_new_twenty_two">结算金额不得大于总资金账户余额：</string>
+    <string name="Payment_new_twenty_three">结算金额不得大于总融资账户余额：</string>
+
+    <string name="Payment_newFinance_one">选择融资款订单</string>
+    <string name="Payment_newFinance_two">收款信息</string>
+    <string name="Payment_newFinance_three">收款账号</string>
+    <string name="Payment_newFinance_four">融资金额 </string>
+
+    <string name="Payment_newFinance_five">支付金额：</string>
+    <string name="Payment_newFinance_six">结算金额：</string>
+
+    <string name="Payment_newFinance4_one">拆分订单</string>
+    <string name="Payment_newFinance4_two">订单金额信息</string>
+    <string name="Payment_newFinance4_three">增票金额</string>
+    <string name="Payment_newFinance4_four">已支付金额</string>
+    <string name="Payment_newFinance4_five">未支付金额</string>
+    <string name="Payment_newFinance4_six">拆分金额</string>
+    <string name="Payment_newFinance4_seven">修改金额</string>
+    <string name="Payment_newFinance4_eight">添加订单</string>
+    <string name="Payment_newFinance4_nine">[已添加]</string>
+    <!--<string name="Payment_newFinance4_ten">下一步（2/3）</string>-->
+    <!--<string name="Payment_newFinance4_eleven">币别与汇率</string>-->
+    <!--<string name="Payment_newFinance4_twelve">币别</string>-->
+    <!--<string name="Payment_new_thirteen">汇率</string>-->
+
+    <!--付款详情-->
+    <string name="Payment_details_menu">提交</string>
+    <string name="Payment_dialog_one">确认提示</string>
+    <string name="Payment_dialog_two">你确定要提交审批吗？</string>
+    <string name="Payment_dialog_three">取消</string>
+    <string name="Payment_dialog_four">提交</string>
+    <string name="Payment_dialog_five">删除</string>
+    <string name="Payment_dialog_six">你确定要删除付款单吗？</string>
+
+    <string name="Payment_one">已通过</string>
+    <string name="Payment_two">支付金额</string>
+    <string name="Payment_two_one">折 RMB 金额：</string>
+    <string name="Payment_two_two">(汇率：</string>
+    <string name="Payment_three">USD 233,445.00</string>
+    <string name="Payment_four">创建时间：</string>
+    <string name="Payment_five">2016-08-16</string>
+    <string name="Payment_six">收款方</string>
+    <string name="Payment_six_1">收款客户：</string>
+    <string name="Payment_seven">收款单位：</string>
+    <string name="Payment_eight">收款银行：</string>
+    <string name="Payment_nine">收款账号：</string>
+    <string name="Payment_ten">订单信息</string>
+    <string name="Payment_ten_one">订单信息（暂无订单）</string>
+    <string name="Payment_ten_two1">订单信息（共有</string>
+    <string name="Payment_ten_two2">条信息）</string>
+    <string name="Payment_list_one">支付金额</string>
+    <string name="Payment_list_two">结算金额</string>
+
+
+
+    <!--审批详情-->
+    <string name="TvAttachment">附件信息</string>
+    <string name="TvApprovalResult">审批记录</string>
+    <string name="TvApprovalUnResult">审批记录 (暂无审批记录)</string>
+
+    <!--付款列表-->
+    <string name="list_Payment_one">宁波市江北德波尔电器有限公司</string>
+    <string name="list_Payment_two">已通过</string>
+    <string name="list_Payment_three">费用-报关费</string>
+    <string name="list_Payment_four">申请时间：</string>
+
+    <string name="invoice_one">12344567</string>
+    <string name="invoice_two">价税合计：</string>
+    <string name="invoice_three">开票日期：</string>
+    <string name="invoice_four">订单号：</string>
+
+
+    <string name="List_order_one">下单时间：</string>
+    <string name="company_bank_list__one">Swift编码：</string>
+    <!--中信保中的外商代码-->
+    <string name="company_code_one">SHENZHEN BESSKY TECHNOLOGY CO</string>
+    <string name="company_code_two">暂无信保代码</string>
+    <string name="company_code_three">内部代码：</string>
+    <string name="company_code_four">未上传信保</string>
+    <string name="company_code_five">上传日期：</string>
+
+    <string name="company_bank_one">暂无信保Swift</string>
+    <string name="company_bank_two">银行</string>
+    <string name="company_bank_three">账号</string>
+    <string name="company_bank_four">Swift</string>
+    <string name="company_bank_five">信保上传日期：</string>
+
+    <!--中信保中的限额-->
+    <string name="company_LCLimit_one">暂无批复额度</string>
+    <string name="company_LCLimit_two">额度：</string>
+    <string name="company_LCLimit_two1">余额：</string>
+    <string name="company_LCLimit_three">无限额编码</string>
+    <string name="company_LCLimit_four">限额编码：</string>
+    <!--中信保中的投保-->
+    <string name="company_Insure_one">投保金额：</string>
+    <string name="company_Insure_two">账期：</string>
+    <string name="company_Insure_four">出运日期：</string>
+
+    <!--中信保中的查看批复-->
+    <string name="company_reply_name">查看批复</string>
+    <string name="company_reply_one">提示：1.由于批复有10分钟左右的延迟。提交时间可以用于参考批复情况。</string>
+    <string name="company_reply_two">暂无批复</string>
+    <string name="company_reply_three">【同意】—</string>
+    <string name="company_reply_four">【不同意】—</string>
+    <!--备注的提示信息-->
+    <string name="DoApproval_Agree">请填写备注(选填)</string>
+    <string name="DoApproval_UnAgree">请填写备注(不同意时必填)</string>
+
+    <!--设置-->
+    <string name="setting_finger">指纹解锁</string>
+    <string name="setting_server">服务器连接</string>
+    <string name="setting_phrase">快捷短语</string>
+    <string name="setting_permission">权限查看</string>
+    <string name="setting_about">关于</string>
+
+    <string name="setting_permission_one">所需权限：</string>
+    <string name="setting_permission_two">（未绑定）</string>
+    <string name="setting_permission_three">（已绑定）</string>
+
+    <!-- 消息中心 -->
+    <string name="typeName" translatable="false">类别</string>
+    <string name="title" translatable="false">标题</string>
+    <string name="content" translatable="false">内容</string>
+    <string name="sendDate" translatable="false">发送时间</string>
+    <string name="creatorName" translatable="false">发件人</string>
+    <!-- 客户 往来单位的-->
+    <string name="Customer_company_item_basic">信息</string>
+    <string name="Customer_company_item_file">附件</string>
+    <string name="Customer_company_item_banks">银行</string>
+
+    <!--快捷短语设置-->
+    <string name="setting_Phrase_one">审批同意快捷短语</string>
+    <string name="setting_Phrase_two">添加同意短语</string>
+    <string name="setting_Phrase_three">最多可以添加8个同意短语，每个短语最多16个字符。</string>
+    <string name="setting_Phrase_four">审批不同意快捷短语</string>
+    <string name="setting_Phrase_five">添加不同意短语</string>
+    <string name="setting_Phrase_six">最多可以添加8个不同意短语，每个短语最多16个字符。</string>
+
+    <!--服务器详细信息-->
+    <string name="setting_server_one">服务器ID</string>
+    <string name="setting_server_two">服务器名称</string>
+    <string name="setting_server_three">备注</string>
+    <string name="setting_server_four">服务器地址</string>
+    <!--设置中的关于界面-->
+    <string name="setting_About_one">当前版本</string>
+    <string name="setting_About_two">Version 0.1.0(181)</string>
+    <string name="setting_About_three">去评分</string>
+    <string name="setting_About_four">服务条款</string>
+    <string name="setting_About_five">关于APP</string>
+    <string name="setting_About_six">关于公司</string>
+    <string name="setting_About_seven">检查更新</string>
+    <string-array name="LCLimit_status_LcType">
+        <item>LC</item>
+        <item>非LC</item>
+    </string-array>
+    <string-array name="LCLimit_status_apply">
+        <item>未申请</item>
+        <item>已申请未上传</item>
+        <item>已上传</item>
+    </string-array>
+    <string-array name="LCLimit_status_CGStatus">
+        <item>通过</item>
+        <item>未通过</item>
+    </string-array>
+    <string-array name="LCLimit_status_replyStatus">
+        <item>通过</item>
+        <item>未通过</item>
+        <item>无效</item>
+    </string-array>
+    
+    <string-array name="Insure_status_apply">
+        <!--// 待提交审批 0, 待审批,1,待审阅 -3,审批通过 2,审批不通过,-1-->
+        <item>待提交审批</item>
+        <item>待审阅</item>
+        <item>待审批</item>
+        <item>审批通过</item>
+        <item>审批不通过</item>
+    </string-array>
+    <string-array name="Insure_status_LCStatus">
+        <!--//未上传 0，未批复 1，批复通过 2，批复不通过 -1.-->
+        <item>未上传</item>
+        <item>未批复</item>
+        <item>批复通过</item>
+        <item>批复不通过</item>
+    </string-array>
+
+
+    <string-array name="buyer_code_status">
+        <item>已上传</item>
+        <item>未上传</item>
+    </string-array>
+    <string-array name="buyer_code_item">
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="Approval_status_name">
+        <!--reportType 审批类型 协议审批  26600 付款审批 3178700 客户审批 0-->
+        <item>协议审批</item>
+        <item>付款审批</item>
+        <item>客户审批</item>
+    </string-array>
+
+
+    <string-array name="Customer_status_name">
+      //未审核 0， 审核中1，生效 2，驳回 -1，注销 3
+        <item>未审核</item>
+        <item>审核中</item>
+        <item>生效</item>
+        <item>驳回</item>
+        <item>注销</item>
+    </string-array>
+
+    <string-array name="Customer_type_name">
+        <item>国内工厂</item>
+        <item>个人商户</item>
+        <item>中间商</item>
+        <item>国外买手</item>
+    </string-array>
+
+    <string-array name="BankSlip_status_name">
+        <item>CNY</item>
+        <item>USD</item>
+        <item>HKD</item>
+        <item>JPY</item>
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="Payment_type_name">
+        <item>货款</item>
+        <item>费用</item>
+        <item>预付款</item>
+    </string-array>
+
+    <string-array name="Payment_source_name">
+        <item>客户自助申请</item>
+        <item>后台代客提款</item>
+    </string-array>
+
+    <string-array name="Payment_status_name">
+        <item>未申请审批</item>   <item>审批中</item>
+        <item>审批同意</item>     <item>审批不同意</item>
+        <item>已支付</item>       <item>已入账</item>
+        <item>新制</item>         <item>已退回</item>
+        <item>结算撤销</item>     <item>待受理</item>
+        <item>批准待支付</item>   <item>待支付审批</item>
+    </string-array>
+
+    <string-array name="Invoice_status_name">
+        <item>新制</item>
+        <item>提交</item>
+        <item>受理</item>
+        <item>生效</item>
+        <item>退回</item>
+    </string-array>
+
+    <string-array name="Order_itemId_name">
+        <item>一般贸易出口通关</item>
+        <item>退税融资</item>
+        <item>赊销融资</item>
+        <item>货代订舱</item>
+        <item>资信调查</item>
+        <item>中信保投保</item>
+        <item>进口服务</item>
+    </string-array>
+
+    <string-array name="Order_itemId_match">
+        <item>已匹配</item>
+        <item>未匹配</item>
+    </string-array>
+
+    <string-array name="Order_status_name">
+        <item>待受理</item>
+        <item>进行中</item>
+        <!--<item>已交单结算</item>-->
+        <item>已完成</item>
+        <item>已取消</item>
+        <item>已拒绝</item>
+        <item>草稿</item>
+    </string-array>
+
+
+    <string-array name="tags">
+        <item>同意</item>
+        <item>信息准确无误</item>
+        <item>金额信息准确</item>
+        <item>审批通过</item>
+        <item>靠谱</item>
+        <item>数据很详细</item>
+    </string-array>
+
+    <string-array name="untags">
+        <item>不同意</item>
+        <item>信息有所错误</item>
+        <item>金额信息不准确</item>
+        <item>审批不通过</item>
+        <item>很不靠谱</item>
+        <item>这家公司经常数据错误</item>
+        <item>没有填写附件</item>
+    </string-array>
+
+    <!--我审批的头部短语-->
+    <string-array name="Approve_state_option">
+        <item>@string/Approve_item_UnApproval</item>
+        <item>@string/Approve_item_Approval</item>
+    </string-array>
+    <!--我发起的头部短语-->
+    <string-array name="Initiate_state_option">
+        <item>@string/Initiate_item_InApproval</item>
+        <item>@string/Initiate_item_Approval</item>
+        <item>@string/Initiate_item_UnApproval</item>
+    </string-array>
+    <!--往来单位信息-->
+    <string-array name="Customer_company_option">
+        <item>@string/Customer_company_item_basic</item>
+        <item>@string/Customer_company_item_file</item>
+        <item>@string/Customer_company_item_banks</item>
+    </string-array>
+    <!--水单列表-->
+    <string-array name="bank_slips_option">
+        <item>@string/bank_slips_option</item>
+        <item>@string/bank_slips_option1</item>
+    </string-array>
+    <!--待客提款-->
+    <string-array name="payment_new_option">
+        <item>@string/payment_new_option</item>
+        <item>@string/payment_new_option1</item>
+    </string-array>
+    <string name="payment_new_option">资金账户</string>
+    <string name="payment_new_option1">融资账户</string>
+
+
+    <string name="no_internet">无网络连接~！</string>
+    <string name="generic_server_down">连接服务器失败~！</string>
+    <string name="generic_error">服务器错误！</string>
+    <string name="TimeoutError">请求超时</string>
+    <string name="NoConnectionError">网络与服务器错误~！</string>
+    <string name="code_500">服务器的内部错误 </string>
+    <string name="code_400"> 请求出错,检查请求 </string>
+    <string name="code_401">授权失败,请重新登录</string>
+    <string name="code_404">找不到请求</string>
+
+    <string-array name="color_short">
+        <item >@color/short1</item>
+        <item >@color/short2</item>
+        <item >@color/short3</item>
+        <item >@color/short4</item>
+        <item >@color/short5</item>
+        <item >@color/short6</item>
+    </string-array>
+</resources>

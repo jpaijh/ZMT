@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyFirstItem"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_drawer_dateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_one_mark_87"
+        android:text="申请日期"
+        android:textSize="@dimen/textSize_16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/btn_drawer_dateFrom"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="时间"-->
+            <!--/>-->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_drawer_dateFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_drawer_ed"
+            android:gravity="center"
+            android:hint="开始时间"
+            android:textSize="@dimen/textSize_14sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" —— " />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_drawer_dateTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_drawer_ed"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_14sp"
+            android:hint="结束时间"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/btn_drawer_dateTo"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="时间"-->
+            <!--/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

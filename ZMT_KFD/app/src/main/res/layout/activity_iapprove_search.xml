@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <!-- 关键字 -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp">
+
+        <!--android:completionHint="历史搜索记录"-->
+        <com.example.ZMTCSD.view.AppCompatAutoCompleteClearTextView
+            android:id="@+id/acct_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="关键字"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/textSize_16sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_login_btn_tyt"
+        android:text="搜 索"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_14sp"
+        />
+
+</LinearLayout>

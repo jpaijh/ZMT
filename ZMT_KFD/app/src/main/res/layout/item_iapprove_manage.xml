@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--style="@style/MyCardView"-->
+        <!--android:layout_weight="1"-->
+        <!--app:cardCornerRadius="8dp"-->
+        <!--app:cardElevation="5dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingRight="15dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                    <!--android:id="@+id/tv_top_left"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="左上"-->
+                    <!--android:textColor="@color/black_one_mark_87"-->
+                    <!--android:textSize="@dimen/textSize_14sp" />-->
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                    <!--android:id="@+id/tv_top_right"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:text="右上"-->
+                    <!--android:textSize="@dimen/textSize_14sp"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@color/line_color" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:id="@+id/iApprove_img"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:src="@mipmap/ic_iapprove_list_image" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_toLeftOf="@+id/iApprove_btn"-->
+                    <!--android:layout_toRightOf="@+id/iApprove_img"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/tv_one_text"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginRight="8dp"-->
+                            <!--android:textColor="@color/black_one_mark_87"-->
+                            <!--android:text="@string/Approve_one"-->
+                            <!--android:textSize="@dimen/textSize_12sp" />-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/tv_one"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/black_one_mark_87"-->
+                            <!--android:textSize="@dimen/textSize_12sp" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="3dp">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/tv_two_text"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginRight="8dp"-->
+                            <!--android:textColor="@color/black_one_mark_87"-->
+                            <!--android:text="@string/Approve_two"-->
+                            <!--android:textSize="@dimen/textSize_12sp" />-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/tv_two"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/black_one_mark_87"-->
+                            <!--android:textSize="@dimen/textSize_12sp" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:weightSum="3">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/tv_three_text"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginRight="8dp"-->
+                            <!--android:textColor="@color/black_one_mark_87"-->
+                            <!--android:text="@string/Approve_three"-->
+                            <!--android:textSize="@dimen/textSize_12sp" />-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/tv_three"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/black_one_mark_87"-->
+                            <!--android:textSize="@dimen/textSize_12sp" />-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<android.support.v7.widget.AppCompatButton-->
+                    <!--android:id="@+id/iApprove_btn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@drawable/shape_iapprove_list_btn"-->
+                    <!--android:minHeight="30dp"-->
+                    <!--android:minWidth="65dp"-->
+                    <!--android:text="审批"-->
+                    <!--android:textColor="@color/red"-->
+                    <!--android:textSize="@dimen/textSize_14sp"-->
+                    <!--android:visibility="gone" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_Bottom"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:visibility="gone">-->
+
+                <!--<View-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/line_color" />-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/iApprove_RecyclerView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

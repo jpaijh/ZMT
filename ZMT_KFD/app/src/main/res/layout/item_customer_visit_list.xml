@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/MyFirstItem">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.thinkcool.circletextimageview.CircleTextImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_circleimgview_account"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/approval_banner_avatar"
+            app:citv_border_color="@color/white"
+            app:citv_border_width="2dp" />
+        <!--  app:citv_border_width="2dp"圆的宽度  圆的颜色
+                    app:citv_border_color="@color/white"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_visit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Customer_visit_one"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_visit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/Customer_visit_two"
+                android:textColor="@color/black_three_mark_38"
+                android:textSize="@dimen/textSize_10sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="45dp"
+       >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_visit_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Customer_visit_three"
+            android:textColor="@color/black_one_mark_87"
+            android:textSize="@dimen/textSize_14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

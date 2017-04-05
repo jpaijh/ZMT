@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar_title_center_black" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingTop="50dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_login_icon3"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:fitsSystemWindows="true"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="20dp">
+
+                <!--android:completionHint="历史账号" 这个参数会在自动提示的list最后一个条目显示-->
+                <!-- 限制输入字符：android:digits="_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
+                <com.example.ZMTCSD.view.AppCompatAutoCompleteClearTextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/editText"
+                    android:completionThreshold="1"
+                    android:drawableLeft="@drawable/selector_icon_user_login"
+                    android:hint="请输入用户名"
+                    android:inputType="text" />
+
+                <com.example.ZMTCSD.view.AppCompatClearEditText
+                    android:id="@+id/et_password"
+                    style="@style/editText"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/selector_icon_password_login"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_login_btn_tint"
+                    android:enabled="false"
+                    android:text="登 录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_14sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_server_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_two_mark_54"
+                        android:text="当前服务器为：自贸通"/>
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_cut_login"
+                        android:paddingLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_theme"
+                        android:visibility="gone"
+                        android:text="切换"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <com.alorma.timeline.RoundTimelineView
+        android:id="@+id/timeline_orderAction"
+        android:layout_width="?android:listPreferredItemHeight"
+        android:layout_height="?android:listPreferredItemHeight"
+        app:timeline_lineStyle="linear"
+        app:timeline_type="middle"
+        app:timeline_lineColor="@color/line_color"
+        app:timeline_lineWidth="2dp"
+
+        app:timeline_indicatorSize="8dp"
+        app:timeline_indicatorColor="@color/line_color2"
+        app:timeline_alignment="middle"
+        app:timeline_drawInternal="false"
+        app:timeline_internalColor="@color/details_Approval"
+        app:timeline_internalPadding="0dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_name_orderAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_14sp"
+            android:textColor="@color/black_one_mark_87"
+            android:textIsSelectable="true"
+            android:text="制单中"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_time_orderAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="@dimen/textSize_12sp"
+            android:textColor="@color/black_two_mark_54"
+            android:text="2016-08-08 10:28:17"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

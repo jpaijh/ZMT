@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/MyFirstItem">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_top_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="左上"
+            android:textColor="@color/black_one_mark_87"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="右上"
+            android:textSize="@dimen/textSize_14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View style="@style/MyView_16" />
+
+    <RelativeLayout style="@style/MyFirstItem">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iApprove_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_iapprove_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iApprove_img"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_one_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/Approve_one"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_two_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/Approve_two"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:weightSum="3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_three_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/Approve_three"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Bottom"
+        style="@style/MyFirstItem_5"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/MyView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/iApprove_RecyclerView"
+            style="@style/MyRecyclerView"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

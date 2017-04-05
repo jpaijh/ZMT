@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_below="@+id/toolbar"
+        style="@style/MyNestedScrollView">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        style="@style/MyRecyclerView"
+        android:layout_below="@+id/toolbar"
+        android:nestedScrollingEnabled="false"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        />
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/tv_volley_date" />
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_approve_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_approve_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/DoApproval_Agree"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/approve_details_recycler"
+        style="@style/MyRecyclerView"
+        android:background="@color/white"
+        android:nestedScrollingEnabled="false" />
+
+</LinearLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_orders"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MyDetailsItem"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_orders_accountName"
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/list_Payment_one"
+                android:textColor="@color/black_one_mark_87"
+                android:textSize="@dimen/textSize_16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_orders_statusStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_Payment_two"
+                android:textColor="#FF55AE7C"
+                android:textSize="@dimen/textSize_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_orders_code"
+                style="@style/AppcompatTextView_Weight1"
+                android:ellipsize="marquee"
+                android:text="@string/invoice_one"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_orders_declarationAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD 123,345.00"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textSize_14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/MyView_16" />
+
+    <LinearLayout
+        style="@style/MyFirstItem"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <LinearLayout
+            android:id="@+id/ll_server_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_image"
+                style="@style/MyRecyclerView"
+                />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/List_order_one"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_orders_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Payment_five"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

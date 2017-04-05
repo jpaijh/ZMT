@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_payDetail_content"
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_payDetail_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_payDetail_statusStr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Payment_one"
+                    android:textColor="#FF55AE7C"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </LinearLayout>
+
+            <View style="@style/MyView_16" />
+            <!--报关金额-->
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Payment_two"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_payDetail_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/Payment_two"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_payDetail_paymentAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:text="@string/Payment_three"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textSize_24sp" />
+            </LinearLayout>
+
+            <View style="@style/MyView_16" />
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_payDetail_type"
+                    style="@style/AppcompatTextView_Weight1"
+                    android:ellipsize="marquee"
+                    android:text="@string/list_Payment_three"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list_Payment_four"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_payDetail_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Payment_five"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:background="@color/white"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_InDetail_Corporation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Payment_six"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp" />
+            </LinearLayout>
+
+            <View style="@style/MyView_16" />
+
+            <LinearLayout
+                style="@style/MyDetailsItem"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Payment_six_1"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_payDetail_reName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16NUGG001"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Payment_seven"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_payDetail_reCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16NUGG001"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Payment_eight"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_payDetail_reBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16NUGG001股份有限公司永康江南分理处股份有限公司永康江南分理处"
+                        android:singleLine="true"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Payment_nine"
+                        android:textColor="@color/black_two_mark_54"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_payDetail_reBankA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16NUGG001"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_payDetail_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/Payment_ten"
+                    android:textSize="@dimen/textSize_14sp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_payDetail"
+                    style="@style/MyRecyclerView"
+                    android:nestedScrollingEnabled="false"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/material_loading_progressbar" />
+
+    <include layout="@layout/tv_no_data" />
+
+</RelativeLayout>

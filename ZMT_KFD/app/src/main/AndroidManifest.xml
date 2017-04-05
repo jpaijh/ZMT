@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ZMTCSD">
+    <!-- 必选-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取MAC地址-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
+
+    <uses-permission android:name="android.permission.CAMERA"/> <!--允许访问摄像头进行拍照-->
+
+    <!-- 可选-->
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 获取logcat日志 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 检查网络状态 -->
+    <uses-permission android:name="android.permission.VIBRATE" />  <!-- 震动 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />  <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络通信-->
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".MyApplication_"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_zmt"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:icon">
+
+        <!-- 必选 -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="9ac34987f3678fe277b4fbc8638319ea" >
+        </meta-data>
+
+        <activity
+            android:name=".activity.BaseActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.LoadingActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen.Loading"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--登录界面 stateUnchanged-->
+        <activity
+            android:name=".activity.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!--主界面-->
+        <activity android:name=".activity.MainActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--我审批的界面-->
+        <activity android:name=".activity.IApproveActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--我发起的界面-->
+        <activity android:name=".activity.InitiateActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+        <!--搜索界面-->
+        <activity android:name=".activity.IApprovalSearchActivity_"
+            android:screenOrientation="portrait"/>
+
+        <!--单据详情界面-->
+        <activity
+            android:name=".activity.IApprovalListDetailsActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <!--信息中心的界面-->
+        <!--<activity android:name=".activity.MessageActivity_"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--/>-->
+        <!--信息中心的详情界面-->
+        <activity android:name=".activity.MessageDetailsActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--客户列表界面-->
+        <activity android:name=".activity.CustomerActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--新建客户界面-->
+        <activity android:name=".activity.CustomerNewActivity_"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            />
+
+        <!--客户的类型界面-->
+        <activity android:name=".activity.CustomerTypeActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--客户的选择服务项界面-->
+        <activity android:name=".activity.CustomerServerItemActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--单个客户详情界面-->
+        <activity android:name=".activity.CustomerDetailsActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--客户详情界面的来访记录-->
+        <activity android:name=".activity.CustomerVisitActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <!--客户详情界面的基本信息-->
+        <activity android:name=".activity.CustomerBasicInfoActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--客户详细中的附件界面-->
+        <activity android:name=".activity.CustomerAttachmentActivity_"
+            android:screenOrientation="portrait"/>
+
+        <!--客户详情界面的往来单位-->
+        <activity android:name=".activity.CustomerCompanyListActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--往来单位的详情界面-->
+        <activity android:name=".activity.CustomerCompanyDetailsActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--银行的详细信息界面-->
+        <activity android:name=".activity.BanksDetailsActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--订单的列表界面 adjustPan并不调整屏幕的大小以便留出软键盘的空间-->
+        <activity android:name=".activity.OrderListActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--订单详细的界面-->
+        <activity android:name=".activity.OrderDetailsActivity_"
+            android:screenOrientation="portrait"/>
+        <!--订单服务项的详细-->
+        <activity android:name=".activity.OrderServersActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 订单中的合并前后的商品信息 -->
+        <activity android:name=".activity.OrderCommodityActivity_"
+            android:screenOrientation="portrait" />
+        <!--订单服务项的状态-->
+        <activity android:name=".activity.OrderItemsActionActivity_"
+            android:screenOrientation="portrait"/>
+
+        <!--增票列表的界面-->
+        <activity android:name=".activity.InvoiceListActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--增票详情界面-->
+        <activity android:name=".activity.InvoiceDetailsActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--水单列表界面-->
+        <activity android:name=".activity.BankSlipListActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+
+        <!--水单详情界面  设置模式为-->
+        <activity android:name=".activity.BankSlipDetailsActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--android:launchMode="singleTask"-->
+        <!--水单详情界面中的客户认领 拆分到订单  -->
+        <activity android:name=".activity.BankSlipOrderActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--水单认领界面-->
+        <activity android:name=".activity.BankSlipClaimActivity_"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            />
+
+        <!--水单认领中的选择客户界面-->
+        <activity android:name=".activity.BankSelectCustomerActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <!--付款列表界面-->
+        <activity android:name=".activity.PaymentListActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款-->
+        <activity android:name=".activity.PaymentNewActivity_"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 的选择客户界面-->
+        <activity android:name=".activity.PaymentNewCustomerActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 选择付款方式-->
+        <activity android:name=".activity.PaymentNewMethodActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 选择担保方式-->
+        <activity android:name=".activity.PaymentNewGuaranteeActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 选择费用方式-->
+        <activity android:name=".activity.PaymentNewSubTypeActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 选择收款单位界面-->
+        <activity android:name=".activity.PaymentNewCompanysActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 选择收款银行界面-->
+        <activity android:name=".activity.PaymentNewBanksActivity_"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 选择 币别界面-->
+        <activity android:name=".activity.PaymentNewCurrencyActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--待客提款 资金 选择订单界面-->
+        <activity android:name=".activity.PaymentNewOrdersActivity_"
+            android:screenOrientation="portrait"/>
+        <!--待客提款 融资 选择订单界面-->
+        <activity android:name=".activity.PaymentNewOrderActivity_"
+            android:screenOrientation="portrait"/>
+        <!--待客提款 融资 选择收款界面-->
+        <activity android:name=".activity.PaymentNewSelectNameActivity_"
+            android:screenOrientation="portrait"/>
+        <!--付款详情界面-->
+        <activity android:name=".activity.PaymentDetailsActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--中信保的外商代码-->
+        <activity android:name=".activity.CompanyBuyCodeActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <!--中信保的限额-->
+        <activity android:name=".activity.CompanyLCLimitActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+        <!--中信保的限额详情-->
+        <activity android:name=".activity.CompanyLCLimitDetailActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--中信保投保 -->
+        <activity android:name=".activity.CompanyInsureActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <!--中信保投保详情 -->
+        <activity android:name=".activity.CompanyInsureDetailActivity_"
+            android:screenOrientation="portrait"
+            />
+        <!--中信保银行  -->
+        <activity android:name=".activity.CompanyBankActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <!--中信保的查看批复-->
+        <activity android:name=".activity.CompanyReplysActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <!--审批的界面-->
+        <activity android:name=".activity.DoApprovalActivity_"
+            android:screenOrientation="portrait"/>
+        <!--详情中打开图片的界面-->
+        <activity android:name=".activity.PhotoViewActivity_"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WebViewActivity_"
+            android:screenOrientation="portrait"/>
+
+
+        <!--设置服务器的界面-->
+        <activity android:name=".activity.Setting_ServerActivity_"
+            android:screenOrientation="portrait"/>
+
+        <!--设置中的短语界面-->
+        <activity android:name=".activity.Setting_PhraseActivity_"
+            android:screenOrientation="portrait"/>
+        <!--设置中的查看权限-->
+        <activity android:name=".activity.Setting_PermissionActivity_"
+            android:screenOrientation="portrait"/>
+
+
+        <!--设置中的关于界面-->
+        <activity android:name=".activity.Setting_AboutActivity_"
+            android:screenOrientation="portrait"/>
+
+        <!--设置服务器_服务器详细配置的界面-->
+        <activity android:name=".activity.Setting_AboutServerActivity_"
+            android:screenOrientation="portrait"/>
+
+        <!--图片选择器 -->
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/customTheme"
+            />
+        <!--图片选择器预览-->
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/customTheme"/>
+
+        <service android:name=".server.TaskService_">
+            <intent-filter>
+                <action android:name="com.zmt_kfd.service.TaskService"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

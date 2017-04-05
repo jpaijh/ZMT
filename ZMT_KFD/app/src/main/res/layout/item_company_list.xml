@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    style="@style/MyFirstItem"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    >
+    <!--android:background="@drawable/selector_mine_item_background"-->
+    <com.thinkcool.circletextimageview.CircleTextImageView
+        android:id="@+id/img_circle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/approval_banner_avatar"
+        android:visibility="visible"
+        />
+    <!--  app:citv_border_width="2dp"圆的宽度  圆的颜色
+                app:citv_border_color="@color/white"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/img_circle"
+        android:layout_toLeftOf="@+id/img_tick"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="深圳金仕盾有限公司"
+            android:textColor="@color/black_one_mark_87"
+            android:singleLine="true"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="深圳金仕盾有限公司"
+            android:textColor="@color/black_two_mark_54"
+            android:textSize="@dimen/textSize_14sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_correct_64"
+        android:visibility="gone" />
+
+</RelativeLayout>
+

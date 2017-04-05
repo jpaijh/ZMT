@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_center_white_noicon" />
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MyNestedScrollView"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="16dp"
+                android:text="@string/Customer_new_three"
+                android:textColor="@color/black_two_mark_54"
+                android:textSize="@dimen/textSize_14sp" />
+            <!--客户类型-->
+            <LinearLayout
+                android:id="@+id/ll_accountType"
+                style="@style/MyFirstItem"
+                android:background="@drawable/selector_mine_item_background"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/Customer_new_four"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_new_accountType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_arrow_next"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </LinearLayout>
+
+            <!--客户编码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/MyFirstItem_5"
+                    android:orientation="horizontal"
+                   >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="登  录 名 "
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/med_new_loginName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入客户编码"
+                        android:digits="_.0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp"
+                        app:met_clearButton="true"
+                        app:met_hideUnderline="true" />
+
+                </LinearLayout>
+
+                <View style="@style/MyView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/Customer_new_one"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/med_new_customerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入客户名称"
+                        android:inputType="text"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp"
+                        app:met_clearButton="true"
+                        app:met_hideUnderline="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/MyFirstItem_5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联  系 人 "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/med_new_contactName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入联系人"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp"
+                        app:met_clearButton="true"
+                        app:met_hideUnderline="true"
+                        app:met_minBottomTextLines="0" />
+                </LinearLayout>
+                <!-- app:met_singleLineEllipsis="true" 是会增加高度的-->
+
+                <View style="@style/MyView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电      话  "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/med_new_contactPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入电话"
+                        android:inputType="phone"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp"
+                        app:met_clearButton="true"
+                        app:met_hideUnderline="true"
+                        app:met_minBottomTextLines="0" />
+                </LinearLayout>
+
+                <View style="@style/MyView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮      箱  "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/med_new_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入邮箱"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black_one_mark_87"
+                        android:textSize="@dimen/textSize_16sp"
+                        app:met_clearButton="true"
+                        app:met_hideUnderline="true"
+                        app:met_minBottomTextLines="0" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--选择服务项-->
+            <LinearLayout
+                android:id="@+id/ll_serviceItemIds"
+                style="@style/MyFirstItem"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_mine_item_background"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/Customer_new_eleven"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_new_serviceItemId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_arrow_next"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_two_mark_54"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/tv_new_AccountAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/select_btn_next"
+                android:enabled="false"
+                android:text="@string/Customer_new_fifteen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18sp" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/bottom"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/black_two_mark_54"-->
+    <!--android:gravity="end">-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/tv_new_AccountAdd"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/doApproval_green"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingLeft="30dp"-->
+    <!--android:paddingRight="30dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="@string/Customer_new_fifteen"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/textSize_20sp" />-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

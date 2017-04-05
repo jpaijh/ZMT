@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:id="@+id/rl_addVisit"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="visible">-->
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#66000000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_theme_bj"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+       >
+
+        <RelativeLayout
+            style="@style/MyFirstItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_theme_bj"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_addVisit_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_16sp"
+                android:textColor="@color/black_one_mark_87"
+                android:text="取消"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_addVisit_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/textSize_16sp"
+                android:textColor="@color/black_three_mark_38"
+                android:enabled="false"
+                android:text="发送"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/textSize_16sp"
+                android:textColor="@color/black_one_mark_87"
+                android:text="填写记录"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/ed_addVisit_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="4"
+                android:maxLines="5"
+                android:background="@drawable/shape_edittext_bg"
+                android:gravity="top"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:hint="填写访问记录"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+<!--</RelativeLayout>-->

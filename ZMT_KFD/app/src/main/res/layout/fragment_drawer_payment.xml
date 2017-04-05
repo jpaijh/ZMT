@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/drawer_button"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <include layout="@layout/drawer_keyword" />
+
+            <include layout="@layout/drawer_date" />
+
+            <include layout="@layout/drawer_amount" />
+            <!--状态-->
+            <include layout="@layout/drawer_state"/>
+
+            <!--来源-->
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:orientation="vertical"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="来源"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_drawer_source"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+
+
+            </LinearLayout>
+            <!--类型-->
+            <LinearLayout
+                style="@style/MyFirstItem"
+                android:orientation="vertical"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="类型"
+                    android:textColor="@color/black_one_mark_87"
+                    android:textSize="@dimen/textSize_16sp"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_drawer_type"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/drawer_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_drawer_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFF5F5F5"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/black_one_mark_87"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_drawer_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E61E8BC3"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16sp" />
+    </LinearLayout>
+
+</RelativeLayout>
